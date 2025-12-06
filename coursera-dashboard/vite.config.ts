@@ -10,6 +10,11 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-      base: '/coursera-nlp-dashboard/'
+      base: '/coursera-nlp-dashboard/',
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, './src'),
+        },
+      }
     };
 });

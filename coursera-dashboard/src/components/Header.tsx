@@ -1,12 +1,13 @@
 import React from 'react';
 import { BarChart3 } from 'lucide-react';
+import coursera_logo from '../assets/coursera_icon.png';
 
 export const Header: React.FC = () => {
   return (
     <header className="bg-white/90 backdrop-blur-md sticky top-0 z-50 py-5 px-8 border-b border-blue-100 shadow-sm transition-all">
       <div className="max-w-[1600px] mx-auto px-4 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-6">
-           {/* Icono limpio azul Coursera */}
+           {/* Icono de Coursera */}
            <div className="flex items-center justify-center">
              <BarChart3 className="w-9 h-9 text-[#0056D2]" strokeWidth={2.5} />
            </div>
@@ -20,8 +21,8 @@ export const Header: React.FC = () => {
              </div>
              
              {/* Espacio para imagen institucional */}
-             <div className="hidden sm:block h-10 w-28 bg-slate-50 border border-dashed border-gray-300 rounded-lg flex items-center justify-center ml-4">
-                <span className="text-[10px] text-gray-400 font-medium">Logo Institución</span>
+             <div className="hidden sm:block h-10 w-28 rounded-lg flex items-center justify-center ml-4">
+                <img src={coursera_logo} alt="Logo de Coursera" className="max-h-8 object-contain" />
              </div>
            </div>
         </div>
