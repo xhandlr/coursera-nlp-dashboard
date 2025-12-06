@@ -1,0 +1,5 @@
+{
+  "name": "Coursera Institutional Dashboard",
+  "description": "A comprehensive analytics dashboard for Coursera metrics featuring grid layouts, KPI tracking, and interactive visualizations using Recharts and Tailwind CSS.",
+  "requestFramePermissions": []
+}
