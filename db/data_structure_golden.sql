@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS coursera;
-CREATE DATABASE coursera;
-USE coursera;
+DROP DATABASE IF EXISTS coursera_golden;
+CREATE DATABASE coursera_golden;
+USE coursera_golden;
 /* (Deje las tablas de silver por si acaso pero si no sirven solo borren el comentario)
 -- Tabla: course 
 CREATE TABLE course (
@@ -85,7 +85,6 @@ CREATE TABLE institution (
 -- Tabla dependiente: platform_detail_courses
 CREATE TABLE platform_detail_courses (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    course_name VARCHAR(15),
     id_category INT,
     hours_duration INT,
     enrollment_students INT,
