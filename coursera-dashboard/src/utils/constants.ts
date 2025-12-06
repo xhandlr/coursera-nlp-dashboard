@@ -1,4 +1,4 @@
-import { RadarData, ReviewGrowthData, ScatterData, TreemapNode, InstitutionRank, WordCloudItem } from './types';
+import { RadarData, ReviewGrowthData, ScatterData, TreemapNode, InstitutionRank, WordCloudItem } from '@/types';
 
 // Coursera & Celestial Palette
 export const COLORS = {

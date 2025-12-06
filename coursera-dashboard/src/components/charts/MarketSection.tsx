@@ -4,7 +4,7 @@ import {
   CartesianGrid, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend 
 } from 'recharts';
 import { Card } from '../Card';
-import { priceRatingData, durationEnrolledData, radarData, COLORS } from '../../constants';
+import { priceRatingData, durationEnrolledData, radarData, COLORS } from '@/utils/constants';
 
 const CustomTooltipPrice = ({ active, payload }: any) => {
   if (active && payload && payload.length) {

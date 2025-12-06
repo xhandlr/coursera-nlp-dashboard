@@ -1,7 +1,7 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import { Card } from '../Card';
-import { distributionData, COLORS } from '../../constants';
+import { distributionData, COLORS } from '@/utils/constants';
 
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {

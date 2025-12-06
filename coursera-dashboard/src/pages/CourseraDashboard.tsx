@@ -1,16 +1,13 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { KPIScorecard } from './components/KPIScorecard';
-import { WordCloud } from './components/WordCloud';
-import { CompletionChart, SatisfactionTable, GrowthChart } from './components/charts/EngagementSection';
-import { PriceVsRating, DurationVsEnrolled, MarketRadar } from './components/charts/MarketSection';
-import { CategoryDonut } from './components/charts/DistributionSection';
+import { KPIScorecard } from '../components/KPIScorecard';
+import { WordCloud } from '../components/WordCloud';
+import { CompletionChart, SatisfactionTable, GrowthChart } from '../components/charts/EngagementSection';
+import { PriceVsRating, DurationVsEnrolled, MarketRadar } from '../components/charts/MarketSection';
+import { CategoryDonut } from '../components/charts/DistributionSection';
 
-const App: React.FC = () => {
+const CourseraDashboard: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-800">
-      <Header />
-
+    <>
       {/* Increased max-width and padding for better margins */}
       <main className="flex-1 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16 pt-12 pb-0">
         
@@ -73,9 +70,8 @@ const App: React.FC = () => {
 
       {/* FINAL SECTION: WORD CLOUD (Footer/Atmospheric) */}
       <WordCloud />
-      
-    </div>
+    </>
   );
 };
 
-export default App;
+export default CourseraDashboard;

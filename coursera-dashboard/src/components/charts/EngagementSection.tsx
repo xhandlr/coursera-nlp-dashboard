@@ -5,7 +5,7 @@ import {
 } from 'recharts';
 import { Star } from 'lucide-react';
 import { Card } from '../Card';
-import { completionData, institutionRankings, growthData, COLORS } from '../../constants';
+import { completionData, institutionRankings, growthData, COLORS } from '@/utils/constants';
 
 // Tooltip components
 const CustomTooltipCompletion = ({ active, payload }: any) => {

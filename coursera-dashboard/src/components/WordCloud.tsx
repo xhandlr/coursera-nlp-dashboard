@@ -1,5 +1,5 @@
 import React from 'react';
-import { wordCloudData } from '../constants';
+import { wordCloudData } from '@/utils/constants';
 
 export const WordCloud: React.FC = () => {
   return (
