@@ -1,0 +1,4 @@
+https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera?select=Coursera_reviews.csv
+https://www.kaggle.com/datasets/elvinrustam/coursera-dataset?select=CourseraDataset-Clean.csv
+https://www.kaggle.com/datasets/imuhammad/course-reviews-on-coursera?select=Coursera_courses.csv
+https://www.kaggle.com/datasets/mitul1999/online-courses-usage-and-history-dataset/data

@@ -3,3 +3,5 @@ node_modules/
 .vite/*
 coursera-dashboard/.vite/
 coursera-dashboard/.vite/*
+data-flow/1-bronze/input/*
+!data-flow/1-bronze/input/download
