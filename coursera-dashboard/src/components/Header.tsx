@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
         </div>
 
         <div className="text-xs font-bold text-[#0056D2] bg-blue-50 px-4 py-2 rounded-xl border border-blue-100 shadow-sm">
-           Reporte 2024
+           Taller de Ingeniería de Datos 2025
         </div>
       </div>
     </header>
