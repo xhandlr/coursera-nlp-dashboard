@@ -1,10 +1,7 @@
 import pandas as pd
 import gensim
-from gensim.utils import simple_preprocess
-from gensim.parsing.preprocessing import STOPWORDS
 from nltk.stem import WordNetLemmatizer, SnowballStemmer
 from nltk.stem.porter import *
-import numpy as np
 import nltk
 import mysql.connector
 from dotenv import load_dotenv
@@ -134,7 +131,16 @@ bow_corpus = [dictionary.doc2bow(doc) for doc in processed_docs]
 # Entrenar el modelo LDA
 # num_topics es el número de temas que queremos extraer
 num_topics = 3
-lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics=num_topics, id2word=dictionary, passes=10, workers=2)
+
+# Se añade 'random_state=100' para asegurar que los resultados sean reproducibles.
+# Cada vez que se ejecute el script con los mismos datos, los tópicos serán los mismos.
+lda_model = gensim.models.LdaMulticore(
+    bow_corpus,
+    num_topics=num_topics,
+    id2word=dictionary,
+    passes=10,
+    workers=2,
+    random_state=100)
 
 # Mostrar los tópicos encontrados
 print("\nTópicos encontrados por el modelo LDA:")
@@ -160,9 +166,9 @@ df_negative['topic'] = [assign_topic(bow) for bow in bow_corpus]
 # Ajustar los nombres para que coincidan con los resultados del modelo LDA.
 
 topic_names = {
-    0: "Calidad del Contenido y Certificaciones",
+    0: "Valor y Calidad del Contenido", # Keywords: certif, work, data, content
     1: "Estructura y Logística del Curso",
-    2: "Sistema de Evaluación y Carga de Trabajo"
+    2: "Contenido Básico o Decepcionante" # Keywords: basic, curs, explic
 }
 df_negative['topic_name'] = df_negative['topic'].map(topic_names)
 
