@@ -1,396 +1,396 @@
 institution_id,institution_name,total_courses,total_reviews,average_rating
-1,"""Xian Jiaotong University""",15,2421,4.5
-2,Advancing Women in Tech,45,8985,4.6
-3,"Akamai Technologies, Inc.",27,234,4.8
-4,Alberta Machine Intelligence Institute,3,1230,4.7
-5,Alfaisal University | KLD,159,17772,4.9
-6,Alibaba Cloud Academy,3,147,4.4
-7,Amazon Ads ,3,0,
-8,Amazon Web Services,114,83874,4.7
-9,"Amazon Web Services, NVIDIA",3,0,
-10,American Museum of Natural History,30,13593,4.7
-11,"American Museum of Natural History, Howard Hughes Medical Institute ",3,9426,4.8
-12,American Psychological Association,24,504,4.7
-13,Anaplan,6,21,4.9
-14,Aptly,3,309,4.6
-15,Arizona State University,336,110682,4.9
-16,"Arizona State University, Universidad Nacional Autónoma de México",6,8430,4.8
-17,Arm,3,261,4.6
-18,Association of International Certified Professional Accountants,12,1503,4.5
-19,Atlassian,6,33999,4.7
-20,Autodesk,96,146241,4.7
-21,"Automatic Data Processing, Inc. (ADP)",27,171,4.7
-22,Automation Anywhere,9,2367,4.6
-23,Ball State University,3,0,
-24,Banco Interamericano de Desarrollo,102,2127,4.8
-25,Berklee,162,82836,4.8
-26,"Berklee, Banco Interamericano de Desarrollo",21,7020,4.8
-27,Big Interview,3,87,4.5
-28,"Birla Institute of Technology & Science, Pilani",12,252,4.5
-29,Blue Prism,3,87,4.6
-30,Board Infinity ,75,3552,4.1
-31,Brightline Initiative,6,4590,4.8
-32,CVS Health,15,576,4.6
-33,California Institute of the Arts,132,595395,4.7
-34,Caltech,15,7827,4.7
-35,Campus BBVA,27,3858,4.7
-36,Capitals Coalition,6,123,4.7
-37,Carnegie Mellon University,3,141,3.9
-38,Case Western Reserve University,54,52092,4.7
-39,CentraleSupélec,3,6048,4.2
-40,CertNexus,72,8880,4.7
-41,Check Point Software Technologies Ltd.,9,30,4.9
-42,Cisco Learning and Certifications,42,1284,4.8
-43,Codio,99,11862,4.6
-44,Columbia University,144,247590,4.8
-45,Commonwealth Education Trust,39,19887,4.7
-46,CompTIA,9,0,
-47,ConsenSys Academy,6,4986,4.7
-48,Copenhagen Business School,36,62403,4.7
-49,"Copenhagen Business School, NHH, ESADE Business and Law School, ESCP Business School",3,72,4.7
-50,Coursera Instructor Network,78,255,4.7
-51,Coursera Project Network,837,136944,4.5
-52,"Coursera Project Network, W3Schools",3,0,
-53,Curtis Institute of Music,24,3744,4.9
-54,Dartmouth College,108,7188,4.9
-55,"Dartmouth College, Institut Mines-Télécom",12,1410,4.6
-56,Databricks,21,4746,4.4
-57,Deep Teaching Solutions,51,858285,4.8
-58,DeepLearning.AI,336,4305075,4.9
-59,"DeepLearning.AI, Amazon Web Services",6,10440,4.8
-60,"DeepLearning.AI, Japan Deep Learning Association",3,741,4.7
-61,"DeepLearning.AI, Stanford University",24,162891,4.9
-62,Dell,3,0,
-63,Digital Marketing Institute,15,2988,4.6
-64,Duke University,372,1014813,4.6
-65,"Duke University, Berlin University of the Arts",3,204,4.8
-66,"Duke University, Creative Time ",12,1215,4.6
-67,"Duke University, Emory University, The University of North Carolina at Chapel Hill",6,2838,4.7
-68,"Duke University, Kilimanjaro Christian Medical University College",3,1860,4.7
-69,"Duke University, North Carolina State University, The University of North Carolina at Chapel Hill",6,17130,4.8
-70,EC-Council,18,2616,4.6
-71,EDHEC Business School,36,29784,4.6
-72,"EDHEC Business School, Société Générale",3,498,4.7
-73,"EDHEC Business School, UNESCO",6,648,4.9
-74,EDUCBA,21,72,4.4
-75,EIT Digital ,75,18213,4.4
-76,"EIT Digital , Politecnico di Milano",9,1605,4.3
-77,ESADE Business and Law School,3,4842,4.8
-78,ESCP Business School,12,3894,4.6
-79,ESSEC Business School,108,52794,4.6
-80,Edge Impulse,9,2478,4.8
-81,Edureka,24,0,
-82,Eindhoven University of Technology,30,16746,4.7
-83,"Eindhoven University of Technology, 4TU.Ethics",9,6408,4.6
-84,Emory University,87,34767,4.7
-85,Erasmus University Rotterdam,141,53889,4.7
-86,"Erasmus University Rotterdam, Fare Network",3,0,
-87,"Erasmus University Rotterdam, University of Leeds",12,801,4.7
-88,Exploratorium,12,525,4.8
-89,Fractal Analytics,27,1422,4.2
-90,Fudan University,33,1491,4.6
-91,"Fudan University, 上海戏剧学院",6,426,3.8
-92,Fundação Instituto de Administração,51,3342,4.7
-93,"Fundação Lemann, Elos Educacional",3,426,4.6
-94,"Fundação Lemann, Foreducation, Google for Education",3,669,4.7
-95,"Fundação Lemann, Instituto Península ",3,1911,4.9
-96,"Fundação Lemann, Instituto Península , Instituto Natura, Ismart",3,288,4.8
-97,Genentech,3,0,
-98,Georgia Institute of Technology,108,163041,4.7
-99,"Georgia Institute of Technology, University of Colorado Boulder",3,66,3.9
-100,GitLab,6,5478,4.8
-101,Goldman Sachs,6,5265,4.7
-102,Goodwill Industries International,30,1935,4.7
-103,Google,921,11519094,4.8
-104,Google - Spectrum Sharing,3,573,4.5
-105,Google AR & VR,12,27294,4.5
-106,Google Cloud,675,1031289,4.7
-107,"Google Cloud, New York Institute of Finance",12,10842,3.9
-108,HEC Paris,48,38061,4.7
-109,"HEC Paris, Ticket for Change",9,3576,4.7
-110,HPE Aruba Networking,21,906,4.7
-111,HRCI,27,5928,4.8
-112,Hebrew University of Jerusalem,42,55203,4.9
-113,High Tech High Graduate School of Education,3,786,4.6
-114,Howard University,33,276,4.5
-115,HubSpot Academy,18,5232,4.7
+261,The University of North Carolina at Chapel Hill,0,,
+256,"The University of Edinburgh, British Council, Learning for Sustainability Scotland",0,,
+387,Yonsei University,0,,
+109,"HEC Paris, Ticket for Change",0,,
+389,École Polytechnique,0,,
+340,University of Kentucky,0,,
+379,Voxy,0,,
+30,Board Infinity ,0,,
+188,Northwestern University,0,,
+247,The George Washington University,0,,
+312,"University of California, Davis",0,,
+326,"University of Copenhagen, Danish Red Cross, Reference Centre for Psychosocial Support",0,,
+198,Politecnico di Milano,0,,
+316,University of Cape Town,0,,
+125,IESE Business School,0,,
+165,"Macquarie University, IBM",0,,
+240,"Technical University of Munich (TUM),  EIT Urban Mobility",0,,
+287,Universidades Anáhuac,0,,
+370,"University of Virginia, UVA Lifetime Learning, Patrick Henry Memorial Foundation",0,,
+70,EC-Council,0,,
+117,IBM ,0,,
+260,The University of Melbourne,0,,
+307,"University of Amsterdam, Utrecht University",0,,
+90,Fudan University,0,,
+273,UiPath,0,,
+224,Siemens,0,,
+325,"University of Copenhagen, Copenhagen Business School",0,,
+160,Ludwig-Maximilians-Universität München (LMU),0,,
+252,The State University of New York,0,,
+289,Universitat de Barcelona,0,,
+60,"DeepLearning.AI, Japan Deep Learning Association",0,,
+349,"University of London, SOAS University of London",0,,
+1,"""Xian Jiaotong University""",0,,
+12,American Psychological Association,0,,
+52,"Coursera Project Network, W3Schools",0,,
+358,University of New Mexico,0,,
+24,Banco Interamericano de Desarrollo,0,,
+84,Emory University,0,,
+184,New York Institute of Finance,0,,
+362,"University of Pennsylvania, Unicef",0,,
+106,Google Cloud,0,,
+134,"Imperial College London, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA)",0,,
+144,Intel,0,,
+222,"Shanghai Jiao Tong University, 上海中医药大学",0,,
+262,"The University of North Carolina at Chapel Hill, The University of Edinburgh",0,,
+2,Advancing Women in Tech,0,,
+236,Tally Education and Distribution Services Private Limited,0,,
+301,University of Alberta,0,,
+305,"University of Amsterdam,  EIT Urban Mobility",0,,
+50,Coursera Instructor Network,0,,
+171,Michigan State University,0,,
+178,Nanjing University,0,,
+199,Pontificia Universidad Católica de Chile,0,,
+13,Anaplan,0,,
+101,Goldman Sachs,0,,
+318,"University of Cape Town, Oxfam",0,,
+26,"Berklee, Banco Interamericano de Desarrollo",0,,
+88,Exploratorium,0,,
+93,"Fundação Lemann, Elos Educacional",0,,
+192,Osmosis,0,,
+238,"Technical University of Denmark (DTU), Copenhagen Business School",0,,
+348,"University of London, Royal Holloway, University of London",0,,
+352,University of Manchester   ,0,,
+128,INSEAD,0,,
+328,"University of Copenhagen, Universidad Politécnica de Madrid, University of Coimbra, EIT Health",0,,
+55,"Dartmouth College, Institut Mines-Télécom",0,,
+232,Sungkyunkwan University,0,,
+139,Institut Mines-Télécom,0,,
+208,Radio y Televisión Española,0,,
+304,University of Amsterdam,0,,
+94,"Fundação Lemann, Foreducation, Google for Education",0,,
+172,"Michigan State University, Oncofertility Consortium",0,,
+220,Scrimba,0,,
+285,Universidade de São Paulo,0,,
+384,Yad Vashem ,0,,
+47,ConsenSys Academy,0,,
+65,"Duke University, Berlin University of the Arts",0,,
+113,High Tech High Graduate School of Education,0,,
+164,Macquarie University,0,,
+369,"University of Virginia, BCG",0,,
+37,Carnegie Mellon University,0,,
+374,Università Bocconi,0,,
+18,Association of International Certified Professional Accountants,0,,
+277,Universidad Nacional Autónoma de México,0,,
+315,"University of California, Santa Cruz",0,,
+167,McMaster University,0,,
+271,"UNSW Sydney (The University of New South Wales), IEEE Geoscience and Remote Sensing Society",0,,
+373,University of Zurich,0,,
+123,IE Business School,0,,
+135,Indian Institute for Human Settlements,0,,
+169,MedCerts,0,,
+87,"Erasmus University Rotterdam, University of Leeds",0,,
+92,Fundação Instituto de Administração,0,,
+136,Indian School of Business,0,,
+347,"University of London, London Business School",0,,
+9,"Amazon Web Services, NVIDIA",0,,
+361,"University of Pennsylvania, National Arts Strategies",0,,
+20,Autodesk,0,,
+7,Amazon Ads ,0,,
+210,Relay Graduate School of Education,0,,
+213,SAE Institute México,0,,
+225,SkillUp EdTech,0,,
+227,Splunk Inc.,0,,
+337,University of Glasgow ,0,,
+368,"University of Virginia Darden School Foundation, IBM",0,,
+89,Fractal Analytics,0,,
+118,"IBM , IBM",0,,
+185,"New York Institute of Finance, Google Cloud",0,,
+377,VMware,0,,
+5,Alfaisal University | KLD,0,,
+23,Ball State University,0,,
+66,"Duke University, Creative Time ",0,,
+85,Erasmus University Rotterdam,0,,
+235,Tally Education,0,,
+286,"Universidade de São Paulo, University of California, Irvine",0,,
+180,National Academy of Sports Medicine,0,,
+209,Red Hat,0,,
+336,"University of Geneva, Université de Montréal, Université libre de Bruxelles",0,,
+95,"Fundação Lemann, Instituto Península ",0,,
+246,The Chinese University of Hong Kong,0,,
+45,Commonwealth Education Trust,0,,
+58,DeepLearning.AI,0,,
+142,Institute for the Future,0,,
+245,"Tel Aviv University, Yad Vashem ",0,,
+383,Workday,0,,
+79,ESSEC Business School,0,,
+176,NIIT,0,,
+255,The University of Edinburgh,0,,
+298,University System of Georgia,0,,
+137,Infosec,0,,
+381,West Virginia University,0,,
+25,Berklee,0,,
+74,EDUCBA,0,,
+138,Insper,0,,
+186,New York University,0,,
+288,Universitat Autònoma de Barcelona,0,,
+308,University of Arizona,0,,
+111,HRCI,0,,
+203,PwC,0,,
+282,"Universidad de Palermo, Parsons School of Design, The New School",0,,
+367,University of Virginia,0,,
+272,USO,0,,
+15,Arizona State University,0,,
+105,Google AR & VR,0,,
+129,ISAE-SUPAERO,0,,
+189,Novartis,0,,
+313,"University of California, Irvine",0,,
+390,École Polytechnique Fédérale de Lausanne,0,,
+46,CompTIA,0,,
+97,Genentech,0,,
+108,HEC Paris,0,,
+173,Microsoft,0,,
+234,Talend,0,,
+269,UBITS,0,,
+339,University of Illinois at Urbana-Champaign,0,,
+201,Pontificia Universidad Católica del Perú,0,,
+229,"Stanford University, DeepLearning.AI",0,,
+357,University of Nebraska,0,,
+351,"University of London, UCL School of Management",0,,
+393,École des Ponts ParisTech,0,,
+57,Deep Teaching Solutions,0,,
+114,Howard University,0,,
+264,The University of Sydney,0,,
+330,"University of Copenhagen, University of Iceland",0,,
+191,Oracle,0,,
+217,"Salesforce, SV Academy",0,,
+146,Intuit,0,,
+194,"Parsons School of Design, The New School",0,,
+221,Shanghai Jiao Tong University,0,,
+44,Columbia University,0,,
+80,Edge Impulse,0,,
+200,"Pontificia Universidad Católica de Chile, Universidad de los Andes, Tecnológico de Monterrey",0,,
+28,"Birla Institute of Technology & Science, Pilani",0,,
+112,Hebrew University of Jerusalem,0,,
+39,CentraleSupélec,0,,
+40,CertNexus,0,,
+121,"IBM, ISC2",0,,
+392,"École Polytechnique, Institut Mines-Télécom",0,,
+22,Automation Anywhere,0,,
+145,Interactive Brokers,0,,
+182,National University of Singapore,0,,
+342,University of Leeds,0,,
+354,University of Michigan,0,,
+11,"American Museum of Natural History, Howard Hughes Medical Institute ",0,,
+36,Capitals Coalition,0,,
+104,Google - Spectrum Sharing,0,,
+241,Technion - Israel Institute of Technology,0,,
+266,The World Bank Group,0,,
+372,University of Western Australia,0,,
+190,O.P. Jindal Global University,0,,
+320,"University of Colorado Boulder, University of California San Diego",0,,
+343,University of London,0,,
+394,"École des Ponts ParisTech, BCG",0,,
+3,"Akamai Technologies, Inc.",0,,
+31,Brightline Initiative,0,,
+226,SoFi,0,,
+388,Yunus Social Business Fund Bengaluru,0,,
+230,"Stanford University, The University of British Columbia",0,,
+197,Pohang University of Science and Technology(POSTECH),0,,
+130,ISC2,0,,
+152,King Abdullah University of Science and Technology,0,,
+214,SAP,0,,
+250,The Museum of Modern Art,0,,
+270,UNSW Sydney (The University of New South Wales),0,,
+283,Universidad de los Andes,0,,
+356,University of Minnesota,0,,
+8,Amazon Web Services,0,,
+32,CVS Health,0,,
+73,"EDHEC Business School, UNESCO",0,,
+149,Juniper Networks,0,,
+321,"University of Colorado Boulder, University of Colorado System",0,,
+323,"University of Colorado System, University of Colorado Boulder",0,,
+327,"University of Copenhagen, Technical University of Denmark (DTU)",0,,
+48,Copenhagen Business School,0,,
+107,"Google Cloud, New York Institute of Finance",0,,
+207,ROI Training,0,,
+158,LearnQuest,0,,
+290,"Universitat de Barcelona, Fundació Navegació Oceànica Barcelona",0,,
+151,Keller Williams,0,,
+319,University of Colorado Boulder,0,,
+6,Alibaba Cloud Academy,0,,
+86,"Erasmus University Rotterdam, Fare Network",0,,
+161,Lund University,0,,
+280,Universidad de Chile,0,,
+119,"IBM , LearnQuest",0,,
+166,MathWorks,0,,
+174,MongoDB Inc.,0,,
+265,The University of Tokyo,0,,
+332,"University of Copenhagen, University of Warsaw, University of Milan, University of Heidelberg, Sorbonne University, Charles University, 4EU+ Alliance",0,,
+43,Codio,0,,
+100,GitLab,0,,
+268,Tufts University,0,,
+292,"Universiteit Leiden, Kalshoven-Gieskes Forum",0,,
+68,"Duke University, Kilimanjaro Christian Medical University College",0,,
+157,Laureate Education,0,,
+205,Qualcomm Academy,0,,
+183,"New Teacher Center, Silicon Schools Fund, Clayton Christensen Institute, Relay Graduate School of Education",0,,
+257,"The University of Edinburgh, Universidad ORT Uruguay",0,,
+344,"University of London, Birkbeck, University of London",0,,
+35,Campus BBVA,0,,
+259,"The University of Hong Kong, The State University of New York",0,,
+299,University at Buffalo,0,,
+17,Arm,0,,
+38,Case Western Reserve University,0,,
+155,Koç University,0,,
+195,Peking University,0,,
+366,University of Toronto,0,,
+395,École normale supérieure,0,,
+132,Illinois Tech,0,,
+303,"University of Alberta, UiT The Arctic University of Norway",0,,
+14,Aptly,0,,
+76,"EIT Digital , Politecnico di Milano",0,,
+103,Google,0,,
+279,"Universidad ORT Uruguay, The University of Edinburgh",0,,
+360,University of Pennsylvania,0,,
+309,"University of Arizona, University of Florida, Drexel University",0,,
+10,American Museum of Natural History,0,,
+140,"Institut Mines-Télécom, Dartmouth College",0,,
+278,Universidad Nacional de Colombia,0,,
+341,University of Lausanne,0,,
+91,"Fudan University, 上海戏剧学院",0,,
+124,"IE Business School, IE School of Architecture & Design",0,,
+141,"Institut Mines-Télécom, École Polytechnique",0,,
+181,National Taiwan University,0,,
+382,Whizlabs,0,,
+156,L&T EduTech,0,,
+163,"Lund University, WWF",0,,
+219,Sciences Po,0,,
+237,Technical University of Denmark (DTU),0,,
+345,"University of London, Bloomsbury Learning Exchange",0,,
+363,University of Pittsburgh,0,,
+110,HPE Aruba Networking,0,,
 116,IBM,0,,
-117,IBM ,939,3017379,4.6
-118,"IBM , IBM",9,11196,4.7
-119,"IBM , LearnQuest",9,1365,4.3
-120,"IBM , Red Hat",3,1833,4.8
-121,"IBM, ISC2",12,732,4.8
-122,"IBM, SkillUp EdTech",33,7182,4.8
-123,IE Business School,108,122832,4.5
-124,"IE Business School, IE School of Architecture & Design",3,3903,4.8
-125,IESE Business School,60,76284,4.8
-126,IIMA - IIM Ahmedabad,21,7149,4.8
-127,IIT Roorkee,3,0,
-128,INSEAD,48,31983,4.7
-129,ISAE-SUPAERO,33,3327,4.7
-130,ISC2,75,14490,4.7
-131,Icahn School of Medicine at Mount Sinai,66,20913,4.6
-132,Illinois Tech,45,228,4.4
-133,Imperial College London,267,378672,4.6
-134,"Imperial College London, Abdul Latif Jameel Institute for Disease and Emergency Analytics (J-IDEA)",6,1254,4.2
-135,Indian Institute for Human Settlements,12,285,4.6
-136,Indian School of Business,15,52065,4.6
-137,Infosec,114,8805,4.6
-138,Insper,9,5550,4.8
-139,Institut Mines-Télécom,45,990,4.6
-140,"Institut Mines-Télécom, Dartmouth College",6,1500,4.6
-141,"Institut Mines-Télécom, École Polytechnique",3,138,4.5
-142,Institute for the Future,15,20001,4.8
-143,Instituto Tecnológico de Aeronáutica,42,15057,4.8
-144,Intel,18,1593,4.5
-145,Interactive Brokers,12,2367,4.4
-146,Intuit,15,33252,4.6
-147,JetBrains,9,18063,4.7
-148,Johns Hopkins University,816,2249955,4.7
-149,Juniper Networks,18,207,4.5
-150,Karlsruhe Institute of Technology,6,834,4.5
-151,Keller Williams,12,24,5.0
-152,King Abdullah University of Science and Technology,9,144,4.6
-153,Knowledge Accelerators,9,6156,4.7
-154,Korea Advanced Institute of Science and Technology(KAIST),117,31383,4.7
-155,Koç University,21,1518,4.7
-156,L&T EduTech,51,1479,4.7
-157,Laureate Education,6,1701,4.8
-158,LearnQuest,159,89442,4.5
-159,London Business School,9,54,4.9
-160,Ludwig-Maximilians-Universität München (LMU),33,22623,4.8
-161,Lund University,105,42660,4.7
-162,"Lund University, EIT RawMaterials, VITO, Geological Survey of Denmark and Greenland, National Technical University of Athens, Ghent University, Delft University of Technology",9,16326,4.8
-163,"Lund University, WWF",3,0,
-164,Macquarie University,150,647601,4.9
-165,"Macquarie University, IBM",9,3528,4.7
-166,MathWorks,51,7842,4.8
-167,McMaster University,21,122871,4.8
-168,Measure What Matters,9,3384,4.9
-169,MedCerts,57,2946,4.8
-170,Meta,288,460092,4.7
-171,Michigan State University,102,73677,4.7
-172,"Michigan State University, Oncofertility Consortium",3,90,4.6
-173,Microsoft,237,113151,4.6
-174,MongoDB Inc.,9,342,4.6
-175,Morehouse College,3,42,4.9
-176,NIIT,3,135,3.2
-177,NVIDIA,9,246,4.6
-178,Nanjing University,39,9723,4.4
-179,"Nanyang Technological University, Singapore",24,15477,4.9
-180,National Academy of Sports Medicine,39,1035,4.6
-181,National Taiwan University,198,41316,4.8
-182,National University of Singapore,30,7689,4.6
-183,"New Teacher Center, Silicon Schools Fund, Clayton Christensen Institute, Relay Graduate School of Education",3,723,4.7
-184,New York Institute of Finance,27,7815,4.6
-185,"New York Institute of Finance, Google Cloud",6,2028,3.9
-186,New York University,54,51777,4.5
-187,Northeastern University ,105,3537,4.6
-188,Northwestern University,117,121293,4.7
-189,Novartis,15,246,4.7
-190,O.P. Jindal Global University,27,666,4.6
-191,Oracle,15,732,4.7
-192,Osmosis,3,21066,4.8
-193,Palo Alto Networks,15,2718,4.6
-194,"Parsons School of Design, The New School",78,5907,4.7
-195,Peking University,114,77670,4.8
-196,PepsiCo,12,0,
-197,Pohang University of Science and Technology(POSTECH),21,19287,4.6
-198,Politecnico di Milano,93,14523,4.7
-199,Pontificia Universidad Católica de Chile,156,148614,4.7
-200,"Pontificia Universidad Católica de Chile, Universidad de los Andes, Tecnológico de Monterrey",3,528,4.8
-201,Pontificia Universidad Católica del Perú,27,99,4.8
-202,Princeton University,36,29094,4.7
-203,PwC,36,209382,4.7
-204,PwC India,3,177,4.6
-205,Qualcomm Academy,12,4116,4.8
-206,Queen Mary University of London,57,2319,4.5
-207,ROI Training,3,129,4.7
-208,Radio y Televisión Española,3,135,4.9
-209,Red Hat,21,6084,4.8
-210,Relay Graduate School of Education,6,4587,4.8
-211,Rice University,297,299457,4.7
-212,Rutgers the State University of New Jersey,99,192825,4.8
-213,SAE Institute México,24,0,
-214,SAP,27,6798,4.7
-215,SAS,78,62175,4.8
-216,"Salesforce, Pathstream",15,8130,4.6
-217,"Salesforce, SV Academy",24,7062,4.5
-218,Sapienza University of Rome,24,5142,4.5
-219,Sciences Po,48,16518,4.7
-220,Scrimba,30,909,4.7
-221,Shanghai Jiao Tong University,27,1746,4.1
-222,"Shanghai Jiao Tong University, 上海中医药大学",3,378,4.6
-223,"Shanghai Jiao Tong University, 云林科技大学 (Yunlin University of Science and Technology)",3,234,4.6
-224,Siemens,45,1158,4.6
-225,SkillUp EdTech,42,1023,4.7
-226,SoFi,21,1785,4.6
-227,Splunk Inc.,21,2184,4.7
-228,Stanford University,270,654747,4.8
-229,"Stanford University, DeepLearning.AI",9,178272,4.9
-230,"Stanford University, The University of British Columbia",18,57798,4.6
-231,Starweaver,72,801,4.5
-232,Sungkyunkwan University,12,654,4.7
-233,Tableau Learning Partner,24,2499,4.7
-234,Talend,3,171,4.7
-235,Tally Education,6,519,4.6
-236,Tally Education and Distribution Services Private Limited,3,294,4.6
-237,Technical University of Denmark (DTU),39,63795,4.7
-238,"Technical University of Denmark (DTU), Copenhagen Business School",6,1218,4.6
-239,Technical University of Munich (TUM),45,5367,4.6
-240,"Technical University of Munich (TUM),  EIT Urban Mobility",3,84,4.8
-241,Technion - Israel Institute of Technology,33,14115,4.6
-242,Tecnológico de Monterrey,216,57210,4.7
-243,"Tecnológico de Monterrey, University of California, Irvine",3,12930,4.7
-244,Tel Aviv University,33,28278,4.8
-245,"Tel Aviv University, Yad Vashem ",6,6006,4.8
-246,The Chinese University of Hong Kong,51,8727,4.8
-247,The George Washington University,12,13146,4.8
-248,The Hong Kong University of Science and Technology,186,169959,4.7
-249,The Linux Foundation,3,6513,4.6
-250,The Museum of Modern Art,39,71082,4.8
-251,The Pennsylvania State University,21,23805,4.8
-252,The State University of New York,153,74136,4.5
-253,"The State University of New York, University at Buffalo",24,62643,4.6
-254,The University of Chicago,33,34536,4.9
-255,The University of Edinburgh,156,230601,4.7
-256,"The University of Edinburgh, British Council, Learning for Sustainability Scotland",12,1290,4.7
-257,"The University of Edinburgh, Universidad ORT Uruguay",9,29961,4.7
-258,The University of Hong Kong,27,20826,4.8
-259,"The University of Hong Kong, The State University of New York",3,681,4.8
-260,The University of Melbourne,33,16809,4.8
-261,The University of North Carolina at Chapel Hill,27,56844,4.7
-262,"The University of North Carolina at Chapel Hill, The University of Edinburgh",6,4026,4.7
-263,The University of Notre Dame,12,204,4.9
-264,The University of Sydney,117,157401,4.8
-265,The University of Tokyo,21,21159,4.7
-266,The World Bank Group,15,6330,4.7
-267,Tsinghua University,9,3306,4.3
-268,Tufts University,3,48,4.9
-269,UBITS,12,3999,4.8
-270,UNSW Sydney (The University of New South Wales),24,24276,4.7
-271,"UNSW Sydney (The University of New South Wales), IEEE Geoscience and Remote Sensing Society",9,1215,4.7
-272,USO,3,33,4.2
-273,UiPath,12,2190,4.7
-274,"United Cities and Local Governments of Africa, African Local Government Academy, Erasmus University Rotterdam, Institute for Housing and Urban Development ",9,882,4.7
-275,Universidad Austral,84,65469,4.7
-276,Universidad Autónoma Metropolitana,18,471,4.5
-277,Universidad Nacional Autónoma de México,324,337530,4.8
-278,Universidad Nacional de Colombia,27,1815,4.9
-279,"Universidad ORT Uruguay, The University of Edinburgh",3,7503,4.8
-280,Universidad de Chile,42,35178,4.8
-281,Universidad de Palermo,108,21093,4.8
-282,"Universidad de Palermo, Parsons School of Design, The New School",3,45,4.5
-283,Universidad de los Andes,198,120762,4.8
-284,Universidade Estadual de Campinas,36,24474,4.9
-285,Universidade de São Paulo,57,94158,4.9
-286,"Universidade de São Paulo, University of California, Irvine",3,2781,4.9
-287,Universidades Anáhuac,21,0,
-288,Universitat Autònoma de Barcelona,210,137616,4.7
-289,Universitat de Barcelona,42,15003,4.7
-290,"Universitat de Barcelona, Fundació Navegació Oceànica Barcelona",18,3993,4.6
-291,Universiteit Leiden,93,40164,4.8
-292,"Universiteit Leiden, Kalshoven-Gieskes Forum",9,14895,4.8
-293,"Universiteit Leiden, LDE Centre for Safety and Security",3,594,4.7
-294,"Universiteit Leiden, Leiden University Medical Center",6,2406,4.8
-295,"Universiteit Leiden, Meertens instituut (KNAW)",9,21150,4.7
-296,"Universiteit Leiden, Naturalis Biodiversity Center",3,495,4.6
-297,"Universiteit Leiden, University of the Arts The Hague",6,402,4.6
-298,University System of Georgia,117,142314,4.7
-299,University at Buffalo,18,7962,4.7
-300,"University at Buffalo, The State University of New York",66,186834,4.6
-301,University of Alberta,117,312858,4.7
-302,"University of Alberta, Alberta Machine Intelligence Institute",33,53085,4.8
-303,"University of Alberta, UiT The Arctic University of Norway",3,51,4.2
-304,University of Amsterdam,93,172263,4.7
-305,"University of Amsterdam,  EIT Urban Mobility",9,501,4.7
-306,"University of Amsterdam, Enviolo",3,0,
-307,"University of Amsterdam, Utrecht University",6,972,4.6
-308,University of Arizona,27,46479,4.8
-309,"University of Arizona, University of Florida, Drexel University",3,57,4.6
-310,University of California San Diego,303,700413,4.6
-311,"University of California San Diego, Duke University",9,34488,4.6
-312,"University of California, Davis",303,731616,4.6
-313,"University of California, Irvine",360,745893,4.7
-314,"University of California, Irvine, Tecnológico de Monterrey",3,10056,4.7
-315,"University of California, Santa Cruz",81,116574,4.5
-316,University of Cape Town,54,30615,4.8
-317,"University of Cape Town, National Oceanic and Atmospheric Administration (NOAA), IW:LEARN, Global Environment Facility (GEF), United Nations Development Programme (UNDP-The GEF), UNESCO-IOC, United Nations Environment Programme",3,858,4.8
-318,"University of Cape Town, Oxfam",3,426,4.9
-319,University of Colorado Boulder,1224,557088,4.7
-320,"University of Colorado Boulder, University of California San Diego",6,6930,4.7
-321,"University of Colorado Boulder, University of Colorado System",27,23322,4.8
-322,University of Colorado System,399,253944,4.7
-323,"University of Colorado System, University of Colorado Boulder",12,19908,4.8
-324,University of Copenhagen,66,91317,4.8
-325,"University of Copenhagen, Copenhagen Business School",3,666,4.5
-326,"University of Copenhagen, Danish Red Cross, Reference Centre for Psychosocial Support",3,93,4.7
-327,"University of Copenhagen, Technical University of Denmark (DTU)",3,1887,4.7
-328,"University of Copenhagen, Universidad Politécnica de Madrid, University of Coimbra, EIT Health",3,420,4.8
-329,"University of Copenhagen, University of Groningen, University of Oslo, EIT Health",3,0,
-330,"University of Copenhagen, University of Iceland",6,234,4.6
-331,"University of Copenhagen, University of Warsaw, University of Milan, Sorbonne University, Charles University, 4EU+ Alliance",3,177,4.7
-332,"University of Copenhagen, University of Warsaw, University of Milan, University of Heidelberg, Sorbonne University, Charles University, 4EU+ Alliance",6,216,4.8
-333,University of Florida,72,26547,4.7
-334,University of Geneva,243,146901,4.8
-335,"University of Geneva, University of Lausanne",3,1164,4.5
-336,"University of Geneva, Université de Montréal, Université libre de Bruxelles",3,228,4.8
-337,University of Glasgow ,45,3669,4.7
-338,University of Houston,39,5913,4.6
-339,University of Illinois at Urbana-Champaign,600,608784,4.7
-340,University of Kentucky,6,10281,4.7
-341,University of Lausanne,27,5178,4.7
-342,University of Leeds,63,7734,4.7
-343,University of London,90,56808,4.7
-344,"University of London, Birkbeck, University of London",6,21816,4.7
-345,"University of London, Bloomsbury Learning Exchange",6,8748,4.8
-346,"University of London, Goldsmiths, University of London",57,50499,4.5
-347,"University of London, London Business School",15,54177,4.9
-348,"University of London, Royal Holloway, University of London",18,2223,4.6
-349,"University of London, SOAS University of London",24,83604,4.6
-350,"University of London, UCL Institute of Education",6,3810,4.7
-351,"University of London, UCL School of Management",3,6015,4.8
-352,University of Manchester   ,39,47859,4.7
-353,"University of Maryland, College Park",87,52701,4.6
-354,University of Michigan,882,7192923,4.8
-355,"University of Michigan, University of Maryland, College Park",9,7596,4.3
-356,University of Minnesota,273,336258,4.7
-357,University of Nebraska,3,279,4.7
-358,University of New Mexico,21,9585,4.7
-359,University of North Texas,21,3159,4.6
-360,University of Pennsylvania,669,1555593,4.7
-361,"University of Pennsylvania, National Arts Strategies",3,597,4.7
-362,"University of Pennsylvania, Unicef",6,7263,4.6
-363,University of Pittsburgh,15,17331,4.7
-364,University of Rochester,45,17613,4.7
-365,University of Science and Technology of China,15,609,4.4
-366,University of Toronto,210,394272,4.8
-367,University of Virginia,201,424173,4.7
-368,"University of Virginia Darden School Foundation, IBM",3,996,4.8
-369,"University of Virginia, BCG",21,34686,4.8
-370,"University of Virginia, UVA Lifetime Learning, Patrick Henry Memorial Foundation",3,513,4.9
-371,University of Washington,132,277422,4.7
-372,University of Western Australia,24,3990,4.7
-373,University of Zurich,21,7731,4.8
-374,Università Bocconi,54,155814,4.8
-375,Università di Napoli Federico II,57,390,4.3
-376,Utrecht University,30,4029,4.7
-377,VMware,3,1326,4.7
-378,Vanderbilt University,108,244842,4.8
-379,Voxy,6,573,4.6
-380,Wesleyan University,105,142890,4.7
-381,West Virginia University,18,20754,4.7
-382,Whizlabs,75,174,3.6
-383,Workday,3,0,
-384,Yad Vashem ,24,408,4.7
-385,Yale University,303,1269687,4.9
-386,Yeshiva University,3,357,4.5
-387,Yonsei University,72,57135,4.6
-388,Yunus Social Business Fund Bengaluru,9,18,4.7
-389,École Polytechnique,108,28812,4.6
-390,École Polytechnique Fédérale de Lausanne,204,167613,4.7
-391,"École Polytechnique, HEC Paris",12,3870,4.6
-392,"École Polytechnique, Institut Mines-Télécom",9,123,4.5
-393,École des Ponts ParisTech,9,7617,4.6
-394,"École des Ponts ParisTech, BCG",3,2334,4.8
-395,École normale supérieure,24,2571,4.8
+239,Technical University of Munich (TUM),0,,
+335,"University of Geneva, University of Lausanne",0,,
+371,University of Washington,0,,
+380,Wesleyan University,0,,
+61,"DeepLearning.AI, Stanford University",0,,
+231,Starweaver,0,,
+300,"University at Buffalo, The State University of New York",0,,
+291,Universiteit Leiden,0,,
+19,Atlassian,0,,
+16,"Arizona State University, Universidad Nacional Autónoma de México",0,,
+263,The University of Notre Dame,0,,
+294,"Universiteit Leiden, Leiden University Medical Center",0,,
+317,"University of Cape Town, National Oceanic and Atmospheric Administration (NOAA), IW:LEARN, Global Environment Facility (GEF), United Nations Development Programme (UNDP-The GEF), UNESCO-IOC, United Nations Environment Programme",0,,
+21,"Automatic Data Processing, Inc. (ADP)",0,,
+59,"DeepLearning.AI, Amazon Web Services",0,,
+75,EIT Digital ,0,,
+126,IIMA - IIM Ahmedabad,0,,
+243,"Tecnológico de Monterrey, University of California, Irvine",0,,
+297,"Universiteit Leiden, University of the Arts The Hague",0,,
+248,The Hong Kong University of Science and Technology,0,,
+314,"University of California, Irvine, Tecnológico de Monterrey",0,,
+162,"Lund University, EIT RawMaterials, VITO, Geological Survey of Denmark and Greenland, National Technical University of Athens, Ghent University, Delft University of Technology",0,,
+202,Princeton University,0,,
+275,Universidad Austral,0,,
+333,University of Florida,0,,
+391,"École Polytechnique, HEC Paris",0,,
+29,Blue Prism,0,,
+127,IIT Roorkee,0,,
+211,Rice University,0,,
+4,Alberta Machine Intelligence Institute,0,,
+143,Instituto Tecnológico de Aeronáutica,0,,
+375,Università di Napoli Federico II,0,,
+96,"Fundação Lemann, Instituto Península , Instituto Natura, Ismart",0,,
+324,University of Copenhagen,0,,
+364,University of Rochester,0,,
+81,Edureka,0,,
+99,"Georgia Institute of Technology, University of Colorado Boulder",0,,
+329,"University of Copenhagen, University of Groningen, University of Oslo, EIT Health",0,,
+295,"Universiteit Leiden, Meertens instituut (KNAW)",0,,
+355,"University of Michigan, University of Maryland, College Park",0,,
+56,Databricks,0,,
+147,JetBrains,0,,
+254,The University of Chicago,0,,
+69,"Duke University, North Carolina State University, The University of North Carolina at Chapel Hill",0,,
+216,"Salesforce, Pathstream",0,,
+33,California Institute of the Arts,0,,
+78,ESCP Business School,0,,
+82,Eindhoven University of Technology,0,,
+64,Duke University,0,,
+228,Stanford University,0,,
+233,Tableau Learning Partner,0,,
+386,Yeshiva University,0,,
+27,Big Interview,0,,
+187,Northeastern University ,0,,
+274,"United Cities and Local Governments of Africa, African Local Government Academy, Erasmus University Rotterdam, Institute for Housing and Urban Development ",0,,
+334,University of Geneva,0,,
+34,Caltech,0,,
+63,Digital Marketing Institute,0,,
+133,Imperial College London,0,,
+148,Johns Hopkins University,0,,
+306,"University of Amsterdam, Enviolo",0,,
+310,University of California San Diego,0,,
+242,Tecnológico de Monterrey,0,,
+276,Universidad Autónoma Metropolitana,0,,
+385,Yale University,0,,
+67,"Duke University, Emory University, The University of North Carolina at Chapel Hill",0,,
+244,Tel Aviv University,0,,
+346,"University of London, Goldsmiths, University of London",0,,
+49,"Copenhagen Business School, NHH, ESADE Business and Law School, ESCP Business School",0,,
+150,Karlsruhe Institute of Technology,0,,
+153,Knowledge Accelerators,0,,
+193,Palo Alto Networks,0,,
+196,PepsiCo,0,,
+267,Tsinghua University,0,,
+62,Dell,0,,
+98,Georgia Institute of Technology,0,,
+376,Utrecht University,0,,
+131,Icahn School of Medicine at Mount Sinai,0,,
+223,"Shanghai Jiao Tong University, 云林科技大学 (Yunlin University of Science and Technology)",0,,
+258,The University of Hong Kong,0,,
+311,"University of California San Diego, Duke University",0,,
+359,University of North Texas,0,,
+71,EDHEC Business School,0,,
+72,"EDHEC Business School, Société Générale",0,,
+83,"Eindhoven University of Technology, 4TU.Ethics",0,,
+170,Meta,0,,
+353,"University of Maryland, College Park",0,,
+378,Vanderbilt University,0,,
+168,Measure What Matters,0,,
+177,NVIDIA,0,,
+365,University of Science and Technology of China,0,,
+206,Queen Mary University of London,0,,
+41,Check Point Software Technologies Ltd.,0,,
+122,"IBM, SkillUp EdTech",0,,
+154,Korea Advanced Institute of Science and Technology(KAIST),0,,
+179,"Nanyang Technological University, Singapore",0,,
+215,SAS,0,,
+251,The Pennsylvania State University,0,,
+253,"The State University of New York, University at Buffalo",0,,
+322,University of Colorado System,0,,
+338,University of Houston,0,,
+53,Curtis Institute of Music,0,,
+175,Morehouse College,0,,
+302,"University of Alberta, Alberta Machine Intelligence Institute",0,,
+42,Cisco Learning and Certifications,0,,
+51,Coursera Project Network,0,,
+77,ESADE Business and Law School,0,,
+120,"IBM , Red Hat",0,,
+159,London Business School,0,,
+218,Sapienza University of Rome,0,,
+293,"Universiteit Leiden, LDE Centre for Safety and Security",0,,
+331,"University of Copenhagen, University of Warsaw, University of Milan, Sorbonne University, Charles University, 4EU+ Alliance",0,,
+350,"University of London, UCL Institute of Education",0,,
+54,Dartmouth College,0,,
+102,Goodwill Industries International,0,,
+212,Rutgers the State University of New Jersey,0,,
+281,Universidad de Palermo,0,,
+284,Universidade Estadual de Campinas,0,,
+204,PwC India,0,,
+296,"Universiteit Leiden, Naturalis Biodiversity Center",0,,
+115,HubSpot Academy,0,,
+249,The Linux Foundation,0,,

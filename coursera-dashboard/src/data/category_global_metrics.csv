@@ -1,0 +1,7 @@
+category_id,category_name,total_enrollment,total_courses,total_completed_students,average_completion,average_rating,average_price
+7,Office Tools,2882713,1139,2145901,74.64,4.0,107.98
+4,Finance,8690753,3398,6497162,74.97,4.0,104.87
+1,AI,5486468,2180,4117086,75.32,3.99,107.05
+2,DataScience,2734806,1098,2063197,75.34,4.01,110.17
+9,Technology,2728293,1073,2053448,75.16,3.96,103.97
+3,Design,2783497,1112,2091405,75.43,4.0,106.72

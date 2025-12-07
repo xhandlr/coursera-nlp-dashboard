@@ -1,0 +1,9 @@
+category_id,category_name,match_type,total_courses,total_reviews,total_flexible,total_hands_on,beginner_courses,intermediate_courses,advanced_courses,average_level,average_rating,average_duration,total_global_courses,total_global_enrollment,average_global_completion,average_global_rating,average_global_price,course_vs_global_courses,rating_difference
+3,Design,ambas,2808,2503878,2688,120,1848,468,33,1.0,3.71,21.11,275,677732,74.17,4.04,103.85,2533,-0.33000000000000007
+8,Social Sciences,solo_course,6711,6525255,6567,144,3636,1530,246,1.0,3.85,23.19,0,0,0.0,0.0,0.0,6711,3.85
+6,Math and Logic,solo_course,1440,6796038,1395,45,759,438,36,1.0,4.31,36.79,0,0,0.0,0.0,0.0,1440,4.31
+2,DataScience,ambas,2892,12228507,2862,30,1650,900,150,1.0,4.48,48.16,247,620874,75.04,4.02,115.3,2645,0.46000000000000085
+9,Technology,ambas,2556,3153132,2157,399,1557,780,75,1.0,3.57,20.21,256,655861,74.92,3.96,103.54,2300,-0.3900000000000001
+1,AI,ambas,2940,11731512,2895,45,1614,999,144,1.0,4.47,42.27,543,1363876,75.51,3.95,110.19,2397,0.5199999999999996
+5,Health,solo_course,2958,3603267,2955,3,1746,729,45,1.0,3.81,21.88,0,0,0.0,0.0,0.0,2958,3.81
+4,Finance,ambas,2805,4789695,2625,180,1803,549,57,1.0,4.14,30.85,841,2129898,74.61,4.02,106.46,1964,0.1200000000000001

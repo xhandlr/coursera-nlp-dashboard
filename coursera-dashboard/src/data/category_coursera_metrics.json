@@ -1,0 +1,245 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "AI",
+    "course_metrics": {
+      "total_courses": 2940,
+      "total_reviews": 11731512,
+      "total_flexible": 2895,
+      "total_hands_on": 45,
+      "beginner_courses": 1614,
+      "intermediate_courses": 999,
+      "advanced_courses": 144,
+      "average_level": 1.47,
+      "average_rating": 4.47,
+      "average_duration": 42.27
+    },
+    "global_metrics": {
+      "total_global_enrollment": 1363876,
+      "total_global_courses": 543,
+      "average_global_completion": 75.51,
+      "average_global_rating": 3.95,
+      "average_global_price": 110.19
+    },
+    "differences": {
+      "course_vs_global_courses": 2397,
+      "rating_difference": 0.5199999999999996
+    }
+  },
+  {
+    "category_id": 2,
+    "category_name": "DataScience",
+    "course_metrics": {
+      "total_courses": 2892,
+      "total_reviews": 12228507,
+      "total_flexible": 2862,
+      "total_hands_on": 30,
+      "beginner_courses": 1650,
+      "intermediate_courses": 900,
+      "advanced_courses": 150,
+      "average_level": 1.44,
+      "average_rating": 4.48,
+      "average_duration": 48.16
+    },
+    "global_metrics": {
+      "total_global_enrollment": 620874,
+      "total_global_courses": 247,
+      "average_global_completion": 75.04,
+      "average_global_rating": 4.02,
+      "average_global_price": 115.3
+    },
+    "differences": {
+      "course_vs_global_courses": 2645,
+      "rating_difference": 0.46000000000000085
+    }
+  },
+  {
+    "category_id": 3,
+    "category_name": "Design",
+    "course_metrics": {
+      "total_courses": 2808,
+      "total_reviews": 2503878,
+      "total_flexible": 2688,
+      "total_hands_on": 120,
+      "beginner_courses": 1848,
+      "intermediate_courses": 468,
+      "advanced_courses": 33,
+      "average_level": 1.23,
+      "average_rating": 3.71,
+      "average_duration": 21.11
+    },
+    "global_metrics": {
+      "total_global_enrollment": 677732,
+      "total_global_courses": 275,
+      "average_global_completion": 74.17,
+      "average_global_rating": 4.04,
+      "average_global_price": 103.85
+    },
+    "differences": {
+      "course_vs_global_courses": 2533,
+      "rating_difference": -0.33000000000000007
+    }
+  },
+  {
+    "category_id": 4,
+    "category_name": "Finance",
+    "course_metrics": {
+      "total_courses": 2805,
+      "total_reviews": 4789695,
+      "total_flexible": 2625,
+      "total_hands_on": 180,
+      "beginner_courses": 1803,
+      "intermediate_courses": 549,
+      "advanced_courses": 57,
+      "average_level": 1.28,
+      "average_rating": 4.14,
+      "average_duration": 30.85
+    },
+    "global_metrics": {
+      "total_global_enrollment": 2129898,
+      "total_global_courses": 841,
+      "average_global_completion": 74.61,
+      "average_global_rating": 4.02,
+      "average_global_price": 106.46
+    },
+    "differences": {
+      "course_vs_global_courses": 1964,
+      "rating_difference": 0.1200000000000001
+    }
+  },
+  {
+    "category_id": 5,
+    "category_name": "Health",
+    "course_metrics": {
+      "total_courses": 2958,
+      "total_reviews": 3603267,
+      "total_flexible": 2955,
+      "total_hands_on": 3,
+      "beginner_courses": 1746,
+      "intermediate_courses": 729,
+      "advanced_courses": 45,
+      "average_level": 1.33,
+      "average_rating": 3.81,
+      "average_duration": 21.88
+    },
+    "global_metrics": {
+      "total_global_enrollment": 0,
+      "total_global_courses": 0,
+      "average_global_completion": 0.0,
+      "average_global_rating": 0.0,
+      "average_global_price": 0.0
+    },
+    "differences": {
+      "course_vs_global_courses": 2958,
+      "rating_difference": 3.81
+    }
+  },
+  {
+    "category_id": 6,
+    "category_name": "Math and Logic",
+    "course_metrics": {
+      "total_courses": 1440,
+      "total_reviews": 6796038,
+      "total_flexible": 1395,
+      "total_hands_on": 45,
+      "beginner_courses": 759,
+      "intermediate_courses": 438,
+      "advanced_courses": 36,
+      "average_level": 1.41,
+      "average_rating": 4.31,
+      "average_duration": 36.79
+    },
+    "global_metrics": {
+      "total_global_enrollment": 0,
+      "total_global_courses": 0,
+      "average_global_completion": 0.0,
+      "average_global_rating": 0.0,
+      "average_global_price": 0.0
+    },
+    "differences": {
+      "course_vs_global_courses": 1440,
+      "rating_difference": 4.31
+    }
+  },
+  {
+    "category_id": 7,
+    "category_name": "Office Tools",
+    "course_metrics": {
+      "total_courses": 0,
+      "total_reviews": 0,
+      "total_flexible": 0,
+      "total_hands_on": 0,
+      "beginner_courses": 0,
+      "intermediate_courses": 0,
+      "advanced_courses": 0,
+      "average_level": 1.0,
+      "average_rating": 0.0,
+      "average_duration": 0.0
+    },
+    "global_metrics": {
+      "total_global_enrollment": 764264,
+      "total_global_courses": 304,
+      "average_global_completion": 75.65,
+      "average_global_rating": 4.02,
+      "average_global_price": 110.28
+    },
+    "differences": {
+      "course_vs_global_courses": -304,
+      "rating_difference": -4.02
+    }
+  },
+  {
+    "category_id": 8,
+    "category_name": "Social Sciences",
+    "course_metrics": {
+      "total_courses": 6711,
+      "total_reviews": 6525255,
+      "total_flexible": 6567,
+      "total_hands_on": 144,
+      "beginner_courses": 3636,
+      "intermediate_courses": 1530,
+      "advanced_courses": 246,
+      "average_level": 1.37,
+      "average_rating": 3.85,
+      "average_duration": 23.19
+    },
+    "global_metrics": {
+      "total_global_enrollment": 0,
+      "total_global_courses": 0,
+      "average_global_completion": 0.0,
+      "average_global_rating": 0.0,
+      "average_global_price": 0.0
+    },
+    "differences": {
+      "course_vs_global_courses": 6711,
+      "rating_difference": 3.85
+    }
+  },
+  {
+    "category_id": 9,
+    "category_name": "Technology",
+    "course_metrics": {
+      "total_courses": 2556,
+      "total_reviews": 3153132,
+      "total_flexible": 2157,
+      "total_hands_on": 399,
+      "beginner_courses": 1557,
+      "intermediate_courses": 780,
+      "advanced_courses": 75,
+      "average_level": 1.39,
+      "average_rating": 3.57,
+      "average_duration": 20.21
+    },
+    "global_metrics": {
+      "total_global_enrollment": 655861,
+      "total_global_courses": 256,
+      "average_global_completion": 74.92,
+      "average_global_rating": 3.96,
+      "average_global_price": 103.54
+    },
+    "differences": {
+      "course_vs_global_courses": 2300,
+      "rating_difference": -0.3900000000000001
+    }
+  }
+]
