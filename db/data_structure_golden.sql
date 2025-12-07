@@ -57,10 +57,7 @@ CREATE TABLE review (
 CREATE TABLE category (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     category_name TEXT, 
-    keywords TEXT, 
-    total_enrollment INT,
-    total_courses INT, 
-    total_reviews INT
+    description TEXT
 );
 
 -- Tabla: platform_metrics 
@@ -112,6 +109,7 @@ CREATE TABLE course (
     id_institution INT,
     keywords TEXT,
     course_url TEXT,
+    id_category INT,
     FOREIGN KEY (id_institution) REFERENCES institution(id)
 );
 
@@ -130,6 +128,8 @@ CREATE TABLE review (
 CREATE TABLE category_metrics (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     id_category INT, 
+    total_enrollment INT,
+    total_courses INT,
     average_completion DOUBLE,
     average_rating DOUBLE, 
     average_price DOUBLE,
