@@ -5,3 +5,6 @@ coursera-dashboard/.vite/
 coursera-dashboard/.vite/*
 data-flow/1-bronze/input/*
 !data-flow/1-bronze/input/download
+.env
+reviews_with_topics.csv
+3-gold/
