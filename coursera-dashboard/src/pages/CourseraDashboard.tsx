@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { KPIScorecard } from '../components/KPIScorecard';
 import { WordCloud } from '../components/WordCloud';
-import { CompletionChart, SatisfactionTable, GrowthChart } from '../components/charts/EngagementSection';
+import { CompletionChart, SatisfactionTable, GrowthChart, MonthlyNegativeChart } from '../components/charts/EngagementSection';
 import { PriceVsRating, DurationVsEnrolled, MarketRadar } from '../components/charts/MarketSection';
-import { CategoryDonut } from '../components/charts/DistributionSection';
-import platformMetrics from '../data/platform_metrics.json'; // Importa los datos del JSON
+import { DistributionSection } from '../components/charts/DistributionSection';
+import platformMetrics from '../data/platform_metrics.json'; 
 
 // Función para formatear números grandes
 const formatNumber = (num: number): string => {
@@ -56,6 +56,9 @@ const CourseraDashboard: React.FC = () => {
             <div className="mt-12 lg:mt-16">
                  <GrowthChart />
             </div>
+            <div className="mt-12 lg:mt-16">
+                 <MonthlyNegativeChart />
+            </div>
         </section>
 
         {/* SECTION B: MARKET ANALYSIS (White/Clean) */}
@@ -77,12 +80,12 @@ const CourseraDashboard: React.FC = () => {
         {/* SECTION C: DISTRIBUTION (Soft Accent Background) */}
         <section className="mb-0 rounded-t-[3rem] bg-gradient-to-b from-[#F0F7FF] to-[#E3F2FD]/30 p-10 lg:p-16 pb-32">
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-extrabold text-[#0056D2] tracking-tight">Distribución del Catálogo</h2>
-                <p className="text-slate-500 font-medium mt-1">Segmentación por temáticas principales</p>
+                <h2 className="text-3xl font-extrabold text-[#0056D2] tracking-tight">Distribución y Segmentación</h2>
+                <p className="text-slate-500 font-medium mt-1">Análisis del catálogo por categoría e idioma de las reseñas</p>
             </div>
             
-            <div className="max-w-5xl mx-auto h-[550px]">
-                <CategoryDonut />
+            <div className="max-w-7xl mx-auto">
+                <DistributionSection />
             </div>
         </section>
 
