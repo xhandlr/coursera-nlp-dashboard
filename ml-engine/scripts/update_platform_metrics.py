@@ -52,11 +52,12 @@ def populate_and_update_platform_metrics():
             SELECT
                 COALESCE(id_platform, 4) AS platform_id,
                 COUNT(id) AS total_courses,
+                SUM(enrollment_students) AS total_enrollment,
                 ROUND(AVG(completion_rate), 2) AS average_completion,
                 ROUND(AVG(rating), 2) AS average_rating,
                 ROUND(AVG(price), 1) AS average_price
             FROM
-                platform_detail_courses
+                platform_detail_courses 
             GROUP BY
                 platform_id;
         """
@@ -68,20 +69,20 @@ def populate_and_update_platform_metrics():
         print("\nPaso 3: Actualizando la tabla 'platform_metrics' con las nuevas métricas...")
         
         # Preparar los datos para una actualización masiva
-        # (total_courses, avg_completion, avg_rating, avg_price, platform_id)
         update_params = [
-            (total_courses, avg_completion, avg_rating, avg_price, platform_id)
-            for platform_id, total_courses, avg_completion, avg_rating, avg_price in metrics_data
+            (total_courses, total_enrollment, avg_completion, avg_rating, avg_price, platform_id)
+            for platform_id, total_courses, total_enrollment, avg_completion, avg_rating, avg_price in metrics_data
         ]
 
         update_query = """
             UPDATE platform_metrics 
             SET 
                 total_courses = %s, 
+                total_enrollment = %s,
                 average_completion = %s, 
                 average_rating = %s, 
                 average_price = %s
-            WHERE id = %s;
+            WHERE id = %s
         """
         cursor.executemany(update_query, update_params)
         conn.commit()
@@ -89,14 +90,14 @@ def populate_and_update_platform_metrics():
 
         # --- PASO 4: Guardar resultados en CSV para el Dashboard ---
         print(f"\nGuardando resultados en la carpeta: {OUTPUT_PATH}")
-        df_metrics = pd.DataFrame(metrics_data, columns=['platform_id', 'total_courses', 'average_completion', 'average_rating', 'average_price'])
+        df_metrics = pd.DataFrame(metrics_data, columns=['platform_id', 'total_courses', 'total_enrollment', 'average_completion', 'average_rating', 'average_price'])
         
         # Añadir los nombres de las plataformas al DataFrame
         platform_names_map = {pid: name for pid, name in platforms}
         df_metrics['platform_name'] = df_metrics['platform_id'].map(platform_names_map)
         
         # Reordenar columnas y guardar
-        df_metrics = df_metrics[['platform_id', 'platform_name', 'total_courses', 'average_completion', 'average_rating', 'average_price']]
+        df_metrics = df_metrics[['platform_id', 'platform_name', 'total_courses', 'total_enrollment', 'average_completion', 'average_rating', 'average_price']]
         df_metrics.to_csv(f"{OUTPUT_PATH}/platform_metrics.csv", index=False)
         print(" - platform_metrics.csv guardado.")
 
