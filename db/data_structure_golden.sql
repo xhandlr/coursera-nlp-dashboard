@@ -56,7 +56,7 @@ CREATE TABLE review (
 -- Tabla: category 
 CREATE TABLE category (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name TEXT, 
+    category_name TEXT UNIQUE, 
     description TEXT
 );
 
@@ -65,6 +65,7 @@ CREATE TABLE platform_metrics (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     platform_name TEXT, 
     total_courses INT,
+    total_enrollment INT,
     average_completion DOUBLE, 
     average_rating DOUBLE, 
     average_price DOUBLE
@@ -124,14 +125,36 @@ CREATE TABLE review (
     course_url TEXT
 );
 
--- category_metrics depende de category
-CREATE TABLE category_metrics (
+-- category_global_metrics depende de category
+CREATE TABLE category_global_metrics (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    id_category INT, 
+    id_category INT UNIQUE, 
     total_enrollment INT,
     total_courses INT,
     average_completion DOUBLE,
     average_rating DOUBLE, 
     average_price DOUBLE,
+    FOREIGN KEY (id_category) REFERENCES category(id)
+);
+
+-- category_coursera_metrics depende de category
+CREATE TABLE category_coursera_metrics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_category INT UNIQUE,
+    total_flexible INT,
+    total_hands_on INT,
+    beginner_courses INT,
+    intermediate_courses INT,
+    advanced_courses INT,
+    total_reviews INT,
+    total_courses INT,
+    average_level DOUBLE,
+    average_rating DOUBLE,
+    average_duration DOUBLE,
+    total_global_enrollment INT,
+    total_global_courses INT,
+    average_global_completion DOUBLE,
+    average_global_rating DOUBLE,
+    average_global_price DOUBLE,
     FOREIGN KEY (id_category) REFERENCES category(id)
 );
