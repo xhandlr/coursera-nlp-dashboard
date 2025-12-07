@@ -66,11 +66,11 @@ export const InsightPanel: React.FC = () => {
         </InsightItem>
 
         <InsightItem title="Correlación Precio/Calidad" type="neutral">
-          <p>No existe una correlación directa significativa entre precio alto y mejor rating, lo que sugiere una oportunidad para democratizar costos sin perder prestigio.</p>
+          <p>Análisis de 2,466 cursos confirma que <strong>no existe correlación</strong> entre precio y rating (-0.033). Los cursos premium no garantizan mejor calidad, sugiriendo oportunidades para optimizar precios sin impactar la satisfacción.</p>
         </InsightItem>
 
-        <InsightItem title="Retención vs. Duración" type="negative">
-          <p>Se detecta un <strong>"Punto de Quiebre"</strong> en la semana 6. Los cursos que superan las 10 semanas sufren una caída del 40% en retención.</p>
+        <InsightItem title="Duración vs Demanda" type="negative">
+          <p>Sorprendentemente, <strong>no hay relación</strong> entre duración del curso e inscripciones (correlación: 0.005). Los estudiantes no prefieren cursos más largos o cortos, indicando que otros factores como contenido y reputación son más determinantes.</p>
         </InsightItem>
 
         <InsightItem title="Liderazgo en Tecnología" type="positive">
