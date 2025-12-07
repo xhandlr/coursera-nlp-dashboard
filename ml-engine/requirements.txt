@@ -1,0 +1,7 @@
+pandas
+gensim
+nltk
+numpy
+python-dotenv
+mysql-connector-python
+langdetect
