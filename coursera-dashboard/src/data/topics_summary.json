@@ -1,0 +1,17 @@
+[
+    {
+        "topic_id":0,
+        "keywords":"0.031*\"assign\" + 0.016*\"work\" + 0.016*\"time\" + 0.015*\"complet\" + 0.014*\"grade\" + 0.013*\"certif\" + 0.012*\"review\" + 0.009*\"peer\" + 0.009*\"final\" + 0.009*\"forum\"",
+        "topic_name":"Valor y Calidad del Contenido"
+    },
+    {
+        "topic_id":1,
+        "keywords":"0.023*\"curs\" + 0.011*\"par\" + 0.009*\"bore\" + 0.007*\"per\" + 0.006*\"esta\" + 0.006*\"explic\" + 0.006*\"com\" + 0.005*\"basic\" + 0.005*\"hac\" + 0.005*\"vide\"",
+        "topic_name":"Estructura y Log\u00edstica del Curso"
+    },
+    {
+        "topic_id":2,
+        "keywords":"0.016*\"learn\" + 0.016*\"video\" + 0.011*\"lectur\" + 0.011*\"like\" + 0.010*\"materi\" + 0.009*\"time\" + 0.009*\"content\" + 0.009*\"quiz\" + 0.008*\"teach\" + 0.008*\"good\"",
+        "topic_name":"Contenido B\u00e1sico o Decepcionante"
+    }
+]

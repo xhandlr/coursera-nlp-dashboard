@@ -1,0 +1,368 @@
+{
+    "metadata": {
+        "title": "Análisis de Tendencias de Reseñas",
+        "generated_at": "2025-12-07 16:30:51",
+        "data_source": "Coursera Golden Database"
+    },
+    "yearly_summary": [
+        {
+            "year": 2015,
+            "total_reviews": 34650,
+            "positive": 32553,
+            "negative": 858,
+            "neutral": 1239
+        },
+        {
+            "year": 2016,
+            "total_reviews": 114219,
+            "positive": 105705,
+            "negative": 3648,
+            "neutral": 4866
+        },
+        {
+            "year": 2017,
+            "total_reviews": 169875,
+            "positive": 160440,
+            "negative": 3666,
+            "neutral": 5769
+        },
+        {
+            "year": 2018,
+            "total_reviews": 172140,
+            "positive": 160992,
+            "negative": 4257,
+            "neutral": 6891
+        },
+        {
+            "year": 2019,
+            "total_reviews": 255246,
+            "positive": 237951,
+            "negative": 6972,
+            "neutral": 10323
+        },
+        {
+            "year": 2020,
+            "total_reviews": 813711,
+            "positive": 770916,
+            "negative": 18684,
+            "neutral": 24111
+        }
+    ],
+    "monthly_negative_evolution": [
+        {
+            "year": 2015,
+            "month": 8,
+            "total_negative_reviews": 87
+        },
+        {
+            "year": 2015,
+            "month": 9,
+            "total_negative_reviews": 114
+        },
+        {
+            "year": 2015,
+            "month": 10,
+            "total_negative_reviews": 234
+        },
+        {
+            "year": 2015,
+            "month": 11,
+            "total_negative_reviews": 228
+        },
+        {
+            "year": 2015,
+            "month": 12,
+            "total_negative_reviews": 195
+        },
+        {
+            "year": 2016,
+            "month": 1,
+            "total_negative_reviews": 333
+        },
+        {
+            "year": 2016,
+            "month": 2,
+            "total_negative_reviews": 429
+        },
+        {
+            "year": 2016,
+            "month": 3,
+            "total_negative_reviews": 441
+        },
+        {
+            "year": 2016,
+            "month": 4,
+            "total_negative_reviews": 297
+        },
+        {
+            "year": 2016,
+            "month": 5,
+            "total_negative_reviews": 363
+        },
+        {
+            "year": 2016,
+            "month": 6,
+            "total_negative_reviews": 345
+        },
+        {
+            "year": 2016,
+            "month": 7,
+            "total_negative_reviews": 138
+        },
+        {
+            "year": 2016,
+            "month": 8,
+            "total_negative_reviews": 222
+        },
+        {
+            "year": 2016,
+            "month": 9,
+            "total_negative_reviews": 309
+        },
+        {
+            "year": 2016,
+            "month": 10,
+            "total_negative_reviews": 270
+        },
+        {
+            "year": 2016,
+            "month": 11,
+            "total_negative_reviews": 273
+        },
+        {
+            "year": 2016,
+            "month": 12,
+            "total_negative_reviews": 228
+        },
+        {
+            "year": 2017,
+            "month": 1,
+            "total_negative_reviews": 306
+        },
+        {
+            "year": 2017,
+            "month": 2,
+            "total_negative_reviews": 273
+        },
+        {
+            "year": 2017,
+            "month": 3,
+            "total_negative_reviews": 303
+        },
+        {
+            "year": 2017,
+            "month": 4,
+            "total_negative_reviews": 246
+        },
+        {
+            "year": 2017,
+            "month": 5,
+            "total_negative_reviews": 261
+        },
+        {
+            "year": 2017,
+            "month": 6,
+            "total_negative_reviews": 345
+        },
+        {
+            "year": 2017,
+            "month": 7,
+            "total_negative_reviews": 348
+        },
+        {
+            "year": 2017,
+            "month": 8,
+            "total_negative_reviews": 294
+        },
+        {
+            "year": 2017,
+            "month": 9,
+            "total_negative_reviews": 291
+        },
+        {
+            "year": 2017,
+            "month": 10,
+            "total_negative_reviews": 351
+        },
+        {
+            "year": 2017,
+            "month": 11,
+            "total_negative_reviews": 264
+        },
+        {
+            "year": 2017,
+            "month": 12,
+            "total_negative_reviews": 384
+        },
+        {
+            "year": 2018,
+            "month": 1,
+            "total_negative_reviews": 333
+        },
+        {
+            "year": 2018,
+            "month": 2,
+            "total_negative_reviews": 390
+        },
+        {
+            "year": 2018,
+            "month": 3,
+            "total_negative_reviews": 399
+        },
+        {
+            "year": 2018,
+            "month": 4,
+            "total_negative_reviews": 408
+        },
+        {
+            "year": 2018,
+            "month": 5,
+            "total_negative_reviews": 321
+        },
+        {
+            "year": 2018,
+            "month": 6,
+            "total_negative_reviews": 390
+        },
+        {
+            "year": 2018,
+            "month": 7,
+            "total_negative_reviews": 291
+        },
+        {
+            "year": 2018,
+            "month": 8,
+            "total_negative_reviews": 294
+        },
+        {
+            "year": 2018,
+            "month": 9,
+            "total_negative_reviews": 351
+        },
+        {
+            "year": 2018,
+            "month": 10,
+            "total_negative_reviews": 417
+        },
+        {
+            "year": 2018,
+            "month": 11,
+            "total_negative_reviews": 318
+        },
+        {
+            "year": 2018,
+            "month": 12,
+            "total_negative_reviews": 345
+        },
+        {
+            "year": 2019,
+            "month": 1,
+            "total_negative_reviews": 477
+        },
+        {
+            "year": 2019,
+            "month": 2,
+            "total_negative_reviews": 477
+        },
+        {
+            "year": 2019,
+            "month": 3,
+            "total_negative_reviews": 531
+        },
+        {
+            "year": 2019,
+            "month": 4,
+            "total_negative_reviews": 501
+        },
+        {
+            "year": 2019,
+            "month": 5,
+            "total_negative_reviews": 579
+        },
+        {
+            "year": 2019,
+            "month": 6,
+            "total_negative_reviews": 621
+        },
+        {
+            "year": 2019,
+            "month": 7,
+            "total_negative_reviews": 684
+        },
+        {
+            "year": 2019,
+            "month": 8,
+            "total_negative_reviews": 780
+        },
+        {
+            "year": 2019,
+            "month": 9,
+            "total_negative_reviews": 636
+        },
+        {
+            "year": 2019,
+            "month": 10,
+            "total_negative_reviews": 594
+        },
+        {
+            "year": 2019,
+            "month": 11,
+            "total_negative_reviews": 504
+        },
+        {
+            "year": 2019,
+            "month": 12,
+            "total_negative_reviews": 588
+        },
+        {
+            "year": 2020,
+            "month": 1,
+            "total_negative_reviews": 795
+        },
+        {
+            "year": 2020,
+            "month": 2,
+            "total_negative_reviews": 777
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "total_negative_reviews": 1188
+        },
+        {
+            "year": 2020,
+            "month": 4,
+            "total_negative_reviews": 2661
+        },
+        {
+            "year": 2020,
+            "month": 5,
+            "total_negative_reviews": 3345
+        },
+        {
+            "year": 2020,
+            "month": 6,
+            "total_negative_reviews": 2772
+        },
+        {
+            "year": 2020,
+            "month": 7,
+            "total_negative_reviews": 2463
+        },
+        {
+            "year": 2020,
+            "month": 8,
+            "total_negative_reviews": 2364
+        },
+        {
+            "year": 2020,
+            "month": 9,
+            "total_negative_reviews": 1860
+        },
+        {
+            "year": 2020,
+            "month": 10,
+            "total_negative_reviews": 459
+        }
+    ]
+}

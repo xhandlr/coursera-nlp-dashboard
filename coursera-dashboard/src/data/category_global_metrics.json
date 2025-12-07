@@ -1,0 +1,62 @@
+[
+  {
+    "category_id": 7,
+    "category_name": "Office Tools",
+    "total_enrollment": 2882713,
+    "total_courses": 1139,
+    "total_completed_students": 2145901,
+    "average_completion": 74.64,
+    "average_rating": 4.0,
+    "average_price": 107.98
+  },
+  {
+    "category_id": 4,
+    "category_name": "Finance",
+    "total_enrollment": 8690753,
+    "total_courses": 3398,
+    "total_completed_students": 6497162,
+    "average_completion": 74.97,
+    "average_rating": 4.0,
+    "average_price": 104.87
+  },
+  {
+    "category_id": 1,
+    "category_name": "AI",
+    "total_enrollment": 5486468,
+    "total_courses": 2180,
+    "total_completed_students": 4117086,
+    "average_completion": 75.32,
+    "average_rating": 3.99,
+    "average_price": 107.05
+  },
+  {
+    "category_id": 2,
+    "category_name": "DataScience",
+    "total_enrollment": 2734806,
+    "total_courses": 1098,
+    "total_completed_students": 2063197,
+    "average_completion": 75.34,
+    "average_rating": 4.01,
+    "average_price": 110.17
+  },
+  {
+    "category_id": 9,
+    "category_name": "Technology",
+    "total_enrollment": 2728293,
+    "total_courses": 1073,
+    "total_completed_students": 2053448,
+    "average_completion": 75.16,
+    "average_rating": 3.96,
+    "average_price": 103.97
+  },
+  {
+    "category_id": 3,
+    "category_name": "Design",
+    "total_enrollment": 2783497,
+    "total_courses": 1112,
+    "total_completed_students": 2091405,
+    "average_completion": 75.43,
+    "average_rating": 4.0,
+    "average_price": 106.72
+  }
+]
