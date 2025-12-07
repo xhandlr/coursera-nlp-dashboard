@@ -7,7 +7,7 @@ interface KPIScorecardProps {
   isPositive?: boolean;
 }
 
-export const KPIScorecard: React.FC<KPIScorecardProps> = ({ label, value, trend, isPositive }) => {
+export const KPIScorecard: React.FC<KPIScorecardProps> = ({ label, value }) => {
   return (
     <div className="flex flex-col items-center justify-center p-10 text-center bg-white rounded-[2rem] shadow-sm border border-blue-50 relative overflow-hidden group hover:shadow-lg transition-all duration-300">
       {/* Decorative background circle */}
@@ -17,18 +17,7 @@ export const KPIScorecard: React.FC<KPIScorecardProps> = ({ label, value, trend,
         {value}
       </h3>
       <p className="text-slate-600 font-bold uppercase tracking-widest text-xs mb-5 z-10">{label}</p>
-      
-      {trend && (
-        <div className={`z-10 px-4 py-2 rounded-full text-sm font-extrabold flex items-center gap-2 shadow-sm border ${
-          isPositive 
-            ? 'bg-green-100 text-green-800 border-green-200' 
-            : 'bg-red-100 text-red-800 border-red-200'
-        }`}>
-          <span className="text-lg leading-none">{isPositive ? '↑' : '↓'}</span>
-          <span>{trend}</span>
-          <span className={`text-[11px] font-semibold ml-1 ${isPositive ? 'text-green-700' : 'text-red-700'}`}>vs año anterior</span>
-        </div>
-      )}
+    
     </div>
   );
 };

@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { KPIScorecard } from '../components/KPIScorecard';
 import { WordCloud } from '../components/WordCloud';
 import { CompletionChart, SatisfactionTable, GrowthChart } from '../components/charts/EngagementSection';
 import { PriceVsRating, DurationVsEnrolled, MarketRadar } from '../components/charts/MarketSection';
 import { CategoryDonut } from '../components/charts/DistributionSection';
+import platformMetrics from '../data/platform_metrics.json'; // Importa los datos del JSON
+
+// Función para formatear números grandes
+const formatNumber = (num: number): string => {
+  if (num >= 1_000_000) {
+    return (num / 1_000_000).toFixed(1) + 'M';
+  }
+  if (num >= 1_000) {
+    return (num / 1_000).toFixed(1) + 'K';
+  }
+  return num.toString();
+};
 
 const CourseraDashboard: React.FC = () => {
+  // Encuentra los datos específicos de Coursera usando useMemo para eficiencia
+  const courseraData = useMemo(() => {
+    return platformMetrics.find(p => p.platform_name === 'Coursera');
+  }, []);
+
+  // Si no se encuentran datos, puedes mostrar un estado de carga o un error
+  if (!courseraData) return <div>Cargando datos de la plataforma...</div>;
+
   return (
     <>
       {/* Increased max-width and padding for better margins */}
@@ -15,10 +35,10 @@ const CourseraDashboard: React.FC = () => {
         <section className="mb-20">
             {/* Increased gap from 6 to 8/10 for breathing room */}
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-               <KPIScorecard label="Inscritos Totales" value="1.2M" trend="12%" isPositive={true} />
-               <KPIScorecard label="Rating Global" value="4.8" trend="0.2" isPositive={true} />
-               <KPIScorecard label="Completación" value="68%" trend="5%" isPositive={false} />
-               <KPIScorecard label="Cursos Activos" value="342" trend="8" isPositive={true} />
+               <KPIScorecard label="Inscritos Totales" value={formatNumber(courseraData.total_enrollment)} />
+               <KPIScorecard label="Rating Global" value={courseraData.average_rating.toFixed(1)} />
+               <KPIScorecard label="Completación" value={`${Math.round(courseraData.average_completion)}%`} />
+               <KPIScorecard label="Cursos Activos" value={courseraData.total_courses.toString()} />
             </div>
         </section>
 
