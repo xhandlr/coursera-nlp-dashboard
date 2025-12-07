@@ -12,7 +12,12 @@ import os
 load_dotenv()
 
 # --- Configuración de Salida ---
-OUTPUT_PATH = "../../coursera-dashboard/src/data"
+# Ruta para guardar los archivos de salida
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_PATH = os.path.join(SCRIPT_DIR, "../../coursera-dashboard/src/data")
+
+# Crear el directorio de salida si no existe
+os.makedirs(OUTPUT_PATH, exist_ok=True)
 
 # --- Descarga de recursos de NLTK ---
 # El script necesita el recurso 'wordnet' para la lematización.
@@ -179,29 +184,29 @@ evolution = df_negative.groupby(['year', 'topic_name']).size().unstack(fill_valu
 
 print(evolution)
 
-# --- PASO 5: Guardar resultados en CSV para el Dashboard ---
+# --- PASO 5: Guardar resultados en JSON para el Dashboard ---
 print(f"\nGuardando resultados en la carpeta: {OUTPUT_PATH}")
 
 # 1. Resumen de Tópicos
 df_topics_summary = pd.DataFrame(topics_data)
 df_topics_summary['topic_name'] = df_topics_summary['topic_id'].map(topic_names)
-df_topics_summary.to_csv(f"{OUTPUT_PATH}/topics_summary.csv", index=False)
-print(" - topics_summary.csv guardado.")
+df_topics_summary.to_json(f"{OUTPUT_PATH}/topics_summary.json", orient='records', indent=4)
+print(" - topics_summary.json guardado.")
 
 # 2. Evolución de Tópicos
-evolution.to_csv(f"{OUTPUT_PATH}/topics_evolution.csv")
-print(" - topics_evolution.csv guardado.")
+evolution.reset_index().to_json(f"{OUTPUT_PATH}/topics_evolution.json", orient='records', indent=4)
+print(" - topics_evolution.json guardado.")
 
 # 3. Muestra de reseñas con su tópico asignado
 df_negative['year'] = df_negative['year'].astype(int) # Asegura que el año sea entero
 df_negative_sample = df_negative.sample(n=min(len(df_negative), 1000), random_state=42)
-df_negative_sample[['review_text', 'year', 'lang', 'topic_name']].to_csv(f"{OUTPUT_PATH}/reviews_with_topics.csv", index=False)
-print(" - reviews_with_topics.csv (muestra) guardado.")
+df_negative_sample[['review_text', 'year', 'lang', 'topic_name']].to_json(f"{OUTPUT_PATH}/reviews_with_topics.json", orient='records', indent=4)
+print(" - reviews_with_topics.json (muestra) guardado.")
 
 # 4. Nueva métrica: Distribución de idiomas
 language_distribution = df_negative['lang'].value_counts().reset_index()
 language_distribution.columns = ['language', 'total_reviews']
-language_distribution.to_csv(f"{OUTPUT_PATH}/language_distribution.csv", index=False)
-print(" - language_distribution.csv guardado.")
+language_distribution.to_json(f"{OUTPUT_PATH}/language_distribution.json", orient='records', indent=4)
+print(" - language_distribution.json guardado.")
 
 print("\n¡Análisis y guardado de resultados completado!")

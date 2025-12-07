@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import Error
 import os
 from dotenv import load_dotenv
-import pandas as pd
+import json  # Cambiamos pandas por json
 
 # Carga las variables de entorno desde el archivo .env
 load_dotenv()
@@ -43,7 +43,7 @@ def update_category_global_metrics():
         
         # Asumimos que completion_rate está en escala 0-100 (basado en CSVs previos).
         # total_completed_students = enrollment_students * (completion_rate / 100)
-        # Hacemos JOIN con category para obtener el nombre para el CSV
+        # Hacemos JOIN con category para obtener el nombre para el JSON
         query_metrics = """
             SELECT
                 pdc.id_category,
@@ -85,7 +85,7 @@ def update_category_global_metrics():
         """
         
         upsert_params = []
-        csv_data = []
+        json_data = []  # Cambiamos csv_data por json_data
 
         for row in metrics_data:
             id_category, category_name, total_enrollment, total_courses, total_completed, avg_completion, avg_rating, avg_price = row
@@ -101,8 +101,8 @@ def update_category_global_metrics():
                 float(avg_price) if avg_price is not None else 0.0
             ))
 
-            # Datos para CSV
-            csv_data.append({
+            # Datos para JSON
+            json_data.append({
                 'category_id': id_category,
                 'category_name': category_name,
                 'total_enrollment': int(total_enrollment),
@@ -116,18 +116,19 @@ def update_category_global_metrics():
         if upsert_params:
             cursor.executemany(upsert_query, upsert_params)
             conn.commit()
-            print(f"  - Se procesaron {len(upsert_params)} registros en 'category_metrics'.")
+            print(f"  - Se procesaron {len(upsert_params)} registros en 'category_global_metrics'.")
         else:
             print("  - No hay datos para actualizar.")
 
-        # --- PASO 3: Guardar resultados en CSV para el Dashboard ---
+        # --- PASO 3: Guardar resultados en JSON para el Dashboard ---
         print(f"\nGuardando resultados en la carpeta: {OUTPUT_PATH}")
-        if csv_data:
-            df_metrics = pd.DataFrame(csv_data)
-            df_metrics.to_csv(f"{OUTPUT_PATH}/category_global_metrics.csv", index=False)
-            print(" - category_global_metrics.csv guardado.")
+        if json_data:
+            json_file_path = f"{OUTPUT_PATH}/category_global_metrics.json"
+            with open(json_file_path, 'w', encoding='utf-8') as f:
+                json.dump(json_data, f, indent=2, ensure_ascii=False)
+            print(f" - {json_file_path} guardado.")
         else:
-            print(" - No hay datos para guardar en CSV.")
+            print(" - No hay datos para guardar en JSON.")
 
         print("\n¡Proceso completado con éxito!")
 
