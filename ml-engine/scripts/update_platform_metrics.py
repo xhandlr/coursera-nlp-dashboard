@@ -3,6 +3,7 @@ from mysql.connector import Error
 import os
 import pandas as pd
 from dotenv import load_dotenv
+import csv
 
 # Carga las variables de entorno desde el archivo .env
 load_dotenv()
@@ -98,8 +99,8 @@ def populate_and_update_platform_metrics():
         
         # Reordenar columnas y guardar
         df_metrics = df_metrics[['platform_id', 'platform_name', 'total_courses', 'total_enrollment', 'average_completion', 'average_rating', 'average_price']]
-        df_metrics.to_csv(f"{OUTPUT_PATH}/platform_metrics.csv", index=False)
-        print(" - platform_metrics.csv guardado.")
+        df_metrics.to_json(f"{OUTPUT_PATH}/platform_metrics.json", orient='records', indent=2)
+        print(" - platform_metrics.json guardado.")
 
         print("\n¡Proceso completado con éxito!")
 
