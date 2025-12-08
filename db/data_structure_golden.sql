@@ -1,62 +1,11 @@
 DROP DATABASE IF EXISTS coursera_golden;
 CREATE DATABASE coursera_golden;
 USE coursera_golden;
-/* (Deje las tablas de silver por si acaso pero si no sirven solo borren el comentario)
--- Tabla: course 
-CREATE TABLE course (
-	id INT AUTO_INCREMENT PRIMARY KEY,
-    name TEXT,
-    institution TEXT,
-    course_url TEXT,
-	course_id TEXT
-);
-
--- Tabla: completion_category
-CREATE TABLE completion_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    course_name VARCHAR(15),
-    category TEXT,
-    hours_duration INT,
-    enrollment_students INT,
-    completion_rate DOUBLE,
-    platform TEXT,
-    price DOUBLE,
-    rating DOUBLE
-);
-
--- Tabla: course_detail
-CREATE TABLE course_detail (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    course_title TEXT,
-    rating DOUBLE,
-    level TEXT,
-    duration INT,
-    schedule TEXT,
-    number_reviews INT,
-    topics TEXT,
-    skills TEXT,
-    modules TEXT,
-    instructor TEXT,
-    institution TEXT,
-    keywords TEXT,
-    course_url TEXT
-);
-
--- Tabla: review
-CREATE TABLE review (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    review TEXT,
-    reviewer TEXT,
-    date_review DATE,
-    rating INT,
-    course_id TEXT
-);
-*/
 
 -- Tabla: category 
 CREATE TABLE category (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name TEXT UNIQUE, 
+    category_name VARCHAR(255) UNIQUE,
     description TEXT
 );
 
@@ -99,7 +48,8 @@ CREATE TABLE course (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     course_title TEXT,
     rating DOUBLE,
-    level TEXT,
+     -- 0:not specified, 1:beginner, 2:intermediate, 3:advanced
+	level ENUM('0', '1', '2', '3') NOT NULL,
     duration INT,
     schedule TEXT,
     number_reviews INT,
@@ -158,3 +108,4 @@ CREATE TABLE category_coursera_metrics (
     average_global_price DOUBLE,
     FOREIGN KEY (id_category) REFERENCES category(id)
 );
+
