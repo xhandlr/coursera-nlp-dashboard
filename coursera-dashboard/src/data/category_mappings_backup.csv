@@ -1,0 +1,19 @@
+original_category,master_category,master_category_id
+AI,AI,1
+Arts and Humanities,Social Sciences,8
+Business,Finance,4
+Computer Science,AI,1
+Data Science,DataScience,2
+DataScience,DataScience,2
+Design,Design,3
+Finance,Finance,4
+Health,Health,5
+Information Technology,Technology,9
+Marketing,Finance,4
+Math and Logic,Math and Logic,6
+Office Tools,Office Tools,7
+Personal Development,Design,3
+Physical Science and Engineering,Social Sciences,8
+Programming,AI,1
+Social Sciences,Social Sciences,8
+Technology,Technology,9

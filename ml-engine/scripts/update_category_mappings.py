@@ -13,6 +13,7 @@ load_dotenv()
 # --- Configuración de Salida ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', 'coursera-dashboard', 'src', 'data'))
+BACKUP_CSV_PATH = os.path.join(OUTPUT_PATH, 'category_mappings_backup.csv')
 
 # --- CONFIGURACIÓN DE LA BASE DE DATOS ---
 DB_CONFIG = {
@@ -22,11 +23,189 @@ DB_CONFIG = {
     'database': os.getenv('DB_NAME')
 }
 
+def check_if_already_processed():
+    """
+    Verifica si el script ya se ejecutó antes detectando:
+    1. Si existen categorías numéricas corruptas
+    2. Si las categorías en course son numéricas
+    """
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        
+        # Verificar si hay categorías corruptas (nombres numéricos)
+        cursor.execute("SELECT COUNT(*) FROM category WHERE category_name REGEXP '^[0-9]+$'")
+        numeric_categories = cursor.fetchone()[0]
+        
+        # Verificar si keywords en course son numéricas
+        cursor.execute("SELECT keywords FROM course WHERE keywords REGEXP '^[0-9]+$' LIMIT 1")
+        numeric_keywords = cursor.fetchone()
+        
+        conn.close()
+        
+        if numeric_categories > 0:
+            print(f"[DETECTADO] {numeric_categories} categorías numéricas corruptas encontradas")
+            return True, "corrupted"
+        
+        if numeric_keywords:
+            print("[DETECTADO] Keywords en course ya son numéricas")
+            return True, "already_processed"
+            
+        return False, "not_processed"
+        
+    except Error as e:
+        print(f"Error verificando estado: {e}")
+        return False, "error"
+
+def clean_corrupted_categories():
+    """
+    Limpia las categorías corruptas de la base de datos
+    """
+    try:
+        print("Limpiando categorías corruptas...")
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        
+        # Primero obtener los IDs de categorías numéricas corruptas
+        cursor.execute("SELECT id FROM category WHERE category_name REGEXP '^[0-9]+$'")
+        corrupted_ids = [row[0] for row in cursor.fetchall()]
+        
+        if not corrupted_ids:
+            print("No se encontraron categorías corruptas")
+            return True
+        
+        print(f"Encontradas categorías corruptas con IDs: {corrupted_ids}")
+        
+        # Limpiar tablas que referencian estas categorías
+        for cat_id in corrupted_ids:
+            # Limpiar category_global_metrics
+            cursor.execute("DELETE FROM category_global_metrics WHERE id_category = %s", (cat_id,))
+            deleted_metrics = cursor.rowcount
+            if deleted_metrics > 0:
+                print(f"  - Eliminadas {deleted_metrics} métricas para categoría ID {cat_id}")
+            
+            # Limpiar category_metrics si existe
+            cursor.execute("SHOW TABLES LIKE 'category_metrics'")
+            if cursor.fetchone():
+                cursor.execute("DELETE FROM category_metrics WHERE id_category = %s", (cat_id,))
+                deleted_metrics2 = cursor.rowcount
+                if deleted_metrics2 > 0:
+                    print(f"  - Eliminadas {deleted_metrics2} métricas adicionales para categoría ID {cat_id}")
+            
+            # Restaurar cursos que referencian esta categoría a NULL
+            cursor.execute("UPDATE course SET id_category = NULL WHERE id_category = %s", (cat_id,))
+            updated_courses = cursor.rowcount
+            if updated_courses > 0:
+                print(f"  - Restauradas {updated_courses} referencias en tabla course")
+                
+            # Restaurar platform_detail_courses que referencian esta categoría a NULL
+            cursor.execute("UPDATE platform_detail_courses SET id_category = NULL WHERE id_category = %s", (cat_id,))
+            updated_platform = cursor.rowcount
+            if updated_platform > 0:
+                print(f"  - Restauradas {updated_platform} referencias en tabla platform_detail_courses")
+        
+        # Ahora eliminar las categorías corruptas
+        cursor.execute("DELETE FROM category WHERE category_name REGEXP '^[0-9]+$'")
+        deleted_count = cursor.rowcount
+        
+        conn.commit()
+        conn.close()
+        
+        print(f"Se eliminaron {deleted_count} categorías corruptas")
+        return True
+        
+    except Error as e:
+        print(f"Error limpiando categorías corruptas: {e}")
+        return False
+
+def load_backup_and_create_descriptions():
+    """
+    Carga el CSV de backup y crea/actualiza las descripciones de categorías
+    """
+    if not os.path.exists(BACKUP_CSV_PATH):
+        print(f"[INFO] No se encontró archivo de backup en {BACKUP_CSV_PATH}")
+        return False
+    
+    try:
+        print(f"Cargando backup desde {BACKUP_CSV_PATH}")
+        df_backup = pd.read_csv(BACKUP_CSV_PATH)
+        
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        
+        # Crear descripciones basadas en el backup
+        descriptions = {}
+        for _, row in df_backup.iterrows():
+            original = row['original_category']
+            master = row['master_category']
+            
+            if master not in descriptions:
+                descriptions[master] = []
+            descriptions[master].append(original)
+        
+        # Actualizar o insertar categorías con descripciones
+        updated_count = 0
+        for master_category, original_list in descriptions.items():
+            # Crear descripción
+            if len(original_list) > 1:
+                description = f"Incluye: {', '.join(sorted(set(original_list)))}"
+            else:
+                description = f"Categoría de {original_list[0]}"
+            
+            # Verificar si la categoría existe
+            cursor.execute("SELECT id FROM category WHERE category_name = %s", (master_category,))
+            existing = cursor.fetchone()
+            
+            if existing:
+                # Actualizar descripción
+                cursor.execute("UPDATE category SET description = %s WHERE category_name = %s", 
+                             (description, master_category))
+                updated_count += 1
+            else:
+                # Insertar nueva categoría
+                cursor.execute("INSERT INTO category (category_name, description) VALUES (%s, %s)", 
+                             (master_category, description))
+                updated_count += 1
+        
+        conn.commit()
+        conn.close()
+        
+        print(f"Se actualizaron/insertaron {updated_count} categorías con descripciones del backup")
+        return True
+        
+    except Exception as e:
+        print(f"Error procesando backup: {e}")
+        return False
+
 def map_and_update_categories():
     """
     Utiliza un modelo de IA para agrupar categorías semánticamente similares,
     puebla la tabla 'category' y actualiza las tablas 'course' y 'platform_detail_courses'.
+    Incluye verificaciones para evitar ejecutar múltiples veces.
     """
+    # Verificar si ya se procesó antes
+    already_processed, status = check_if_already_processed()
+    
+    if already_processed:
+        if status == "corrupted":
+            print("[ACCIÓN] Detectadas categorías corruptas. Limpiando...")
+            if not clean_corrupted_categories():
+                print("[ERROR] No se pudieron limpiar las categorías corruptas")
+                return
+            
+            # Intentar usar backup para restaurar
+            if load_backup_and_create_descriptions():
+                print("[ÉXITO] Categorías restauradas desde backup")
+                return
+            else:
+                print("[ADVERTENCIA] No se pudo restaurar desde backup, continuando con proceso normal...")
+        
+        elif status == "already_processed":
+            print("[INFO] Las categorías ya fueron procesadas (son numéricas)")
+            # Intentar mejorar descripciones con backup
+            load_backup_and_create_descriptions()
+            return
+    
     conn = None
     try:
         print("Conectando a la base de datos MySQL...")
@@ -42,6 +221,13 @@ def map_and_update_categories():
         
         all_raw_categories = sorted(list(course_categories.union(platform_categories)))
         print(f"  - Total de {len(all_raw_categories)} categorías únicas encontradas.")
+
+        # Verificar si las categorías son numéricas (ya procesadas)
+        numeric_categories = [cat for cat in all_raw_categories if cat.isdigit()]
+        if numeric_categories:
+            print(f"[ADVERTENCIA] Se encontraron {len(numeric_categories)} categorías ya numéricas")
+            print("[INFO] El script ya fue ejecutado. Saltando procesamiento...")
+            return
 
         # --- PASO 2: Usar IA para agrupar categorías (Embeddings + Clustering) ---
         print("\nPaso 2: Usando modelo de IA para encontrar similitudes semánticas...")
@@ -86,11 +272,28 @@ def map_and_update_categories():
         new_categories = [name for name in master_categories_final if name not in existing_categories]
         
         if new_categories:
-            category_data = [(name,) for name in new_categories]
-            insert_category_query = "INSERT INTO category (category_name) VALUES (%s)"
+            # Crear descripciones apropiadas para cada categoría
+            category_data = []
+            for name in new_categories:
+                # Buscar todos los miembros de este cluster para crear descripción
+                cluster_members = []
+                for cluster_id, master_name in master_category_names.items():
+                    if master_name == name:
+                        cluster_members = clusters[cluster_id]
+                        break
+                
+                # Crear descripción basada en los miembros del cluster
+                if len(cluster_members) > 1:
+                    description = f"Incluye: {', '.join(sorted(cluster_members))}"
+                else:
+                    description = f"Categoría de {name}"
+                
+                category_data.append((name, description))
+            
+            insert_category_query = "INSERT INTO category (category_name, description) VALUES (%s, %s)"
             cursor.executemany(insert_category_query, category_data)
             conn.commit()
-            print(f"  - Se insertaron {len(new_categories)} nuevas categorías.")
+            print(f"  - Se insertaron {len(new_categories)} nuevas categorías con descripciones.")
         else:
             print("  - No hay nuevas categorías para insertar.")
 
