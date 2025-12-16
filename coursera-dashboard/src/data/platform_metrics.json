@@ -1,6 +1,6 @@
 [
   {
-    "platform_id":1.0,
+    "platform_id":1,
     "platform_name":"Coursera",
     "total_courses":2466,
     "total_enrollment":6212505.0,
@@ -9,7 +9,7 @@
     "average_price":108.0
   },
   {
-    "platform_id":2.0,
+    "platform_id":2,
     "platform_name":"edX",
     "total_courses":2479,
     "total_enrollment":6232148.0,
@@ -18,7 +18,7 @@
     "average_price":104.6
   },
   {
-    "platform_id":4.0,
+    "platform_id":4,
     "platform_name":"LinkedIn Learning",
     "total_courses":2501,
     "total_enrollment":6323600.0,
@@ -27,7 +27,7 @@
     "average_price":104.9
   },
   {
-    "platform_id":3.0,
+    "platform_id":3,
     "platform_name":"Udemy",
     "total_courses":2554,
     "total_enrollment":6538277.0,

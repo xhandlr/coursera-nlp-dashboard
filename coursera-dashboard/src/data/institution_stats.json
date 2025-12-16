@@ -5,10 +5,10 @@
       "institutions_with_courses": 394,
       "institutions_with_reviews": 377,
       "global_totals": {
-        "total_courses": 25110,
-        "total_reviews": 51331284,
-        "average_courses_per_institution": 63.7,
-        "average_reviews_per_institution": 130282.4
+        "total_courses": 8370,
+        "total_reviews": 17110428,
+        "average_courses_per_institution": 21.2,
+        "average_reviews_per_institution": 43427.5
       },
       "global_ratings": {
         "weighted_average": 4.75,

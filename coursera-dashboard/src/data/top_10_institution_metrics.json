@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Top 10 Instituciones por Prestigio - Coursera",
-    "generated_at": "2025-12-07 19:05:05",
+    "generated_at": "2025-12-15 18:22:28",
     "criteria": "Prestigio = Rating promedio × Factor de volumen (mínimo 100 reseñas)",
     "data_source": "Coursera Golden Database"
   },
@@ -10,8 +10,8 @@
       "rank": 1,
       "institution_name": "Stanford University, DeepLearning.AI",
       "average_rating": 4.9,
-      "total_reviews": 178272,
-      "total_courses": 9,
+      "total_reviews": 59424,
+      "total_courses": 3,
       "reviews_per_course": 19808.0,
       "prestige_score": 9.8
     },
@@ -19,82 +19,82 @@
       "rank": 2,
       "institution_name": "DeepLearning.AI, Stanford University",
       "average_rating": 4.9,
-      "total_reviews": 162891,
-      "total_courses": 24,
+      "total_reviews": 54297,
+      "total_courses": 8,
       "reviews_per_course": 6787.1,
       "prestige_score": 9.8
     },
     {
       "rank": 3,
-      "institution_name": "Nanyang Technological University, Singapore",
-      "average_rating": 4.9,
-      "total_reviews": 15477,
-      "total_courses": 24,
-      "reviews_per_course": 644.9,
-      "prestige_score": 9.8
-    },
-    {
-      "rank": 4,
       "institution_name": "Hebrew University of Jerusalem",
       "average_rating": 4.88,
-      "total_reviews": 55203,
-      "total_courses": 42,
+      "total_reviews": 18401,
+      "total_courses": 14,
       "reviews_per_course": 1314.4,
       "prestige_score": 9.76
     },
     {
-      "rank": 5,
-      "institution_name": "Universidade Estadual de Campinas",
-      "average_rating": 4.88,
-      "total_reviews": 24474,
-      "total_courses": 36,
-      "reviews_per_course": 679.8,
-      "prestige_score": 9.76
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "institution_name": "Yale University",
       "average_rating": 4.87,
-      "total_reviews": 1269687,
-      "total_courses": 303,
+      "total_reviews": 423229,
+      "total_courses": 101,
       "reviews_per_course": 4190.4,
       "prestige_score": 9.74
     },
     {
-      "rank": 7,
+      "rank": 5,
       "institution_name": "Macquarie University",
       "average_rating": 4.87,
-      "total_reviews": 647601,
-      "total_courses": 150,
+      "total_reviews": 215867,
+      "total_courses": 50,
       "reviews_per_course": 4317.3,
       "prestige_score": 9.74
     },
     {
-      "rank": 8,
+      "rank": 6,
       "institution_name": "University of London, London Business School",
       "average_rating": 4.87,
-      "total_reviews": 54177,
-      "total_courses": 15,
+      "total_reviews": 18059,
+      "total_courses": 5,
       "reviews_per_course": 3611.8,
       "prestige_score": 9.74
     },
     {
+      "rank": 7,
+      "institution_name": "Arizona State University",
+      "average_rating": 4.86,
+      "total_reviews": 36894,
+      "total_courses": 112,
+      "reviews_per_course": 329.4,
+      "prestige_score": 9.72
+    },
+    {
+      "rank": 8,
+      "institution_name": "Universidade de São Paulo",
+      "average_rating": 4.86,
+      "total_reviews": 31386,
+      "total_courses": 19,
+      "reviews_per_course": 1651.9,
+      "prestige_score": 9.72
+    },
+    {
       "rank": 9,
-      "institution_name": "Alfaisal University | KLD",
-      "average_rating": 4.87,
-      "total_reviews": 17772,
-      "total_courses": 159,
-      "reviews_per_course": 111.8,
-      "prestige_score": 9.74
+      "institution_name": "DeepLearning.AI",
+      "average_rating": 4.85,
+      "total_reviews": 1435025,
+      "total_courses": 112,
+      "reviews_per_course": 12812.7,
+      "prestige_score": 9.7
     },
     {
       "rank": 10,
-      "institution_name": "Arizona State University",
-      "average_rating": 4.86,
-      "total_reviews": 110682,
-      "total_courses": 336,
-      "reviews_per_course": 329.4,
-      "prestige_score": 9.72
+      "institution_name": "Universidad de los Andes",
+      "average_rating": 4.85,
+      "total_reviews": 40254,
+      "total_courses": 66,
+      "reviews_per_course": 609.9,
+      "prestige_score": 9.7
     }
   ],
   "other_top_lists": {
@@ -103,122 +103,122 @@
         "rank": 1,
         "institution_name": "Stanford University, DeepLearning.AI",
         "average_rating": 4.9,
-        "total_reviews": 178272
+        "total_reviews": 59424
       },
       {
         "rank": 2,
         "institution_name": "DeepLearning.AI, Stanford University",
         "average_rating": 4.9,
-        "total_reviews": 162891
+        "total_reviews": 54297
       },
       {
         "rank": 3,
         "institution_name": "Nanyang Technological University, Singapore",
         "average_rating": 4.9,
-        "total_reviews": 15477
+        "total_reviews": 5159
       },
       {
         "rank": 4,
         "institution_name": "Measure What Matters",
         "average_rating": 4.9,
-        "total_reviews": 3384
+        "total_reviews": 1128
       },
       {
         "rank": 5,
         "institution_name": "Universidade de São Paulo, University of California, Irvine",
         "average_rating": 4.9,
-        "total_reviews": 2781
+        "total_reviews": 927
       },
       {
         "rank": 6,
         "institution_name": "Fundação Lemann, Instituto Península ",
         "average_rating": 4.9,
-        "total_reviews": 1911
+        "total_reviews": 637
       },
       {
         "rank": 7,
         "institution_name": "Universidad Nacional de Colombia",
         "average_rating": 4.9,
-        "total_reviews": 1815
+        "total_reviews": 605
       },
       {
         "rank": 8,
         "institution_name": "EDHEC Business School, UNESCO",
         "average_rating": 4.9,
-        "total_reviews": 648
+        "total_reviews": 216
       },
       {
         "rank": 9,
         "institution_name": "University of Virginia, UVA Lifetime Learning, Patrick Henry Memorial Foundation",
         "average_rating": 4.9,
-        "total_reviews": 513
+        "total_reviews": 171
       },
       {
         "rank": 10,
         "institution_name": "University of Cape Town, Oxfam",
         "average_rating": 4.9,
-        "total_reviews": 426
+        "total_reviews": 142
       }
     ],
     "by_courses": [
       {
         "rank": 1,
         "institution_name": "University of Colorado Boulder",
-        "total_courses": 1224,
+        "total_courses": 408,
         "average_rating": 4.7
       },
       {
         "rank": 2,
         "institution_name": "IBM ",
-        "total_courses": 939,
+        "total_courses": 313,
         "average_rating": 4.62
       },
       {
         "rank": 3,
         "institution_name": "Google",
-        "total_courses": 921,
+        "total_courses": 307,
         "average_rating": 4.81
       },
       {
         "rank": 4,
         "institution_name": "University of Michigan",
-        "total_courses": 882,
+        "total_courses": 294,
         "average_rating": 4.78
       },
       {
         "rank": 5,
         "institution_name": "Coursera Project Network",
-        "total_courses": 837,
+        "total_courses": 279,
         "average_rating": 4.53
       },
       {
         "rank": 6,
         "institution_name": "Johns Hopkins University",
-        "total_courses": 816,
+        "total_courses": 272,
         "average_rating": 4.66
       },
       {
         "rank": 7,
         "institution_name": "Google Cloud",
-        "total_courses": 675,
+        "total_courses": 225,
         "average_rating": 4.68
       },
       {
         "rank": 8,
         "institution_name": "University of Pennsylvania",
-        "total_courses": 669,
+        "total_courses": 223,
         "average_rating": 4.67
       },
       {
         "rank": 9,
         "institution_name": "University of Illinois at Urbana-Champaign",
-        "total_courses": 600,
+        "total_courses": 200,
         "average_rating": 4.68
       },
       {
         "rank": 10,
         "institution_name": "University of Colorado System",
-        "total_courses": 399,
+        "total_courses": 133,
         "average_rating": 4.67
       }
     ],
@@ -226,61 +226,61 @@
       {
         "rank": 1,
         "institution_name": "Google",
-        "total_reviews": 11519094,
+        "total_reviews": 3839698,
         "average_rating": 4.81
       },
       {
         "rank": 2,
         "institution_name": "University of Michigan",
-        "total_reviews": 7192923,
+        "total_reviews": 2397641,
         "average_rating": 4.78
       },
       {
         "rank": 3,
         "institution_name": "DeepLearning.AI",
-        "total_reviews": 4305075,
+        "total_reviews": 1435025,
         "average_rating": 4.85
       },
       {
         "rank": 4,
         "institution_name": "IBM ",
-        "total_reviews": 3017379,
+        "total_reviews": 1005793,
         "average_rating": 4.62
       },
       {
         "rank": 5,
         "institution_name": "Johns Hopkins University",
-        "total_reviews": 2249955,
+        "total_reviews": 749985,
         "average_rating": 4.66
       },
       {
         "rank": 6,
         "institution_name": "University of Pennsylvania",
-        "total_reviews": 1555593,
+        "total_reviews": 518531,
         "average_rating": 4.67
       },
       {
         "rank": 7,
         "institution_name": "Yale University",
-        "total_reviews": 1269687,
+        "total_reviews": 423229,
         "average_rating": 4.87
       },
       {
         "rank": 8,
         "institution_name": "Google Cloud",
-        "total_reviews": 1031289,
+        "total_reviews": 343763,
         "average_rating": 4.68
       },
       {
         "rank": 9,
         "institution_name": "Duke University",
-        "total_reviews": 1014813,
+        "total_reviews": 338271,
         "average_rating": 4.64
       },
       {
         "rank": 10,
         "institution_name": "Deep Teaching Solutions",
-        "total_reviews": 858285,
+        "total_reviews": 286095,
         "average_rating": 4.81
       }
     ]
@@ -291,10 +291,10 @@
       "institutions_with_courses": 394,
       "institutions_with_reviews": 377,
       "global_totals": {
-        "total_courses": 25110,
-        "total_reviews": 51331284,
-        "average_courses_per_institution": 63.7,
-        "average_reviews_per_institution": 130282.4
+        "total_courses": 8370,
+        "total_reviews": 17110428,
+        "average_courses_per_institution": 21.2,
+        "average_reviews_per_institution": 43427.5
       },
       "global_ratings": {
         "weighted_average": 4.75,

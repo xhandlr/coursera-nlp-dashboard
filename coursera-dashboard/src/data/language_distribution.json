@@ -1,162 +1,158 @@
 [
     {
         "language":"en",
-        "total_reviews":34153
+        "total_reviews":11369
     },
     {
         "language":"es",
-        "total_reviews":1484
+        "total_reviews":498
     },
     {
         "language":"so",
-        "total_reviews":331
-    },
-    {
-        "language":"ru",
-        "total_reviews":291
+        "total_reviews":109
     },
     {
         "language":"fr",
-        "total_reviews":287
+        "total_reviews":99
+    },
+    {
+        "language":"ru",
+        "total_reviews":97
     },
     {
         "language":"pt",
-        "total_reviews":184
+        "total_reviews":63
     },
     {
         "language":"it",
-        "total_reviews":156
+        "total_reviews":56
     },
     {
         "language":"af",
-        "total_reviews":123
+        "total_reviews":43
     },
     {
         "language":"no",
-        "total_reviews":116
+        "total_reviews":36
     },
     {
         "language":"de",
-        "total_reviews":96
+        "total_reviews":34
     },
     {
         "language":"unknown",
-        "total_reviews":87
+        "total_reviews":29
     },
     {
         "language":"tl",
-        "total_reviews":81
+        "total_reviews":28
     },
     {
         "language":"nl",
-        "total_reviews":71
+        "total_reviews":26
     },
     {
         "language":"ca",
-        "total_reviews":62
-    },
-    {
-        "language":"et",
-        "total_reviews":59
-    },
-    {
-        "language":"ro",
-        "total_reviews":59
-    },
-    {
-        "language":"sk",
-        "total_reviews":51
-    },
-    {
-        "language":"id",
-        "total_reviews":45
-    },
-    {
-        "language":"vi",
-        "total_reviews":42
-    },
-    {
-        "language":"zh-cn",
-        "total_reviews":40
-    },
-    {
-        "language":"sw",
-        "total_reviews":32
-    },
-    {
-        "language":"cy",
-        "total_reviews":28
-    },
-    {
-        "language":"da",
-        "total_reviews":28
-    },
-    {
-        "language":"tr",
-        "total_reviews":25
-    },
-    {
-        "language":"sq",
-        "total_reviews":24
-    },
-    {
-        "language":"ko",
         "total_reviews":22
     },
     {
-        "language":"sv",
+        "language":"ro",
         "total_reviews":20
     },
     {
-        "language":"fi",
+        "language":"et",
         "total_reviews":19
     },
     {
-        "language":"sl",
-        "total_reviews":18
+        "language":"sk",
+        "total_reviews":17
     },
     {
-        "language":"pl",
+        "language":"vi",
+        "total_reviews":14
+    },
+    {
+        "language":"zh-cn",
+        "total_reviews":14
+    },
+    {
+        "language":"id",
+        "total_reviews":13
+    },
+    {
+        "language":"sw",
+        "total_reviews":11
+    },
+    {
+        "language":"da",
+        "total_reviews":10
+    },
+    {
+        "language":"cy",
         "total_reviews":9
     },
     {
-        "language":"uk",
-        "total_reviews":6
+        "language":"tr",
+        "total_reviews":8
     },
     {
-        "language":"lv",
+        "language":"ko",
+        "total_reviews":7
+    },
+    {
+        "language":"sl",
+        "total_reviews":7
+    },
+    {
+        "language":"fi",
+        "total_reviews":7
+    },
+    {
+        "language":"sq",
+        "total_reviews":7
+    },
+    {
+        "language":"sv",
         "total_reviews":5
     },
     {
-        "language":"ja",
-        "total_reviews":3
+        "language":"pl",
+        "total_reviews":4
     },
     {
-        "language":"hu",
-        "total_reviews":3
+        "language":"uk",
+        "total_reviews":2
+    },
+    {
+        "language":"lv",
+        "total_reviews":2
     },
     {
         "language":"ar",
-        "total_reviews":3
+        "total_reviews":1
+    },
+    {
+        "language":"hu",
+        "total_reviews":1
     },
     {
         "language":"hr",
-        "total_reviews":3
+        "total_reviews":1
     },
     {
-        "language":"lt",
-        "total_reviews":3
+        "language":"ja",
+        "total_reviews":1
     },
     {
         "language":"bg",
-        "total_reviews":3
+        "total_reviews":1
+    },
+    {
+        "language":"lt",
+        "total_reviews":1
     },
     {
         "language":"cs",
-        "total_reviews":3
-    },
-    {
-        "language":"zh-tw",
         "total_reviews":1
     }
 ]
