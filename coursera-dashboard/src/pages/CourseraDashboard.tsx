@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { KPIScorecard } from '../components/KPIScorecard';
 import { WordCloud } from '../components/WordCloud';
-import { CompletionChart, SatisfactionTable, GrowthChart, MonthlyNegativeChart } from '../components/charts/EngagementSection';
+import { CompletionChart, SatisfactionTable, GrowthChart, MonthlyNegativeChart, EngagementGrowthChart } from '../components/charts/EngagementSection';
 import { PriceVsRating, DurationVsEnrolled, MarketRadar } from '../components/charts/MarketSection';
 import { DistributionSection } from '../components/charts/DistributionSection';
 import platformMetrics from '../data/platform_metrics.json'; 
@@ -49,13 +49,23 @@ const CourseraDashboard: React.FC = () => {
                 <p className="text-slate-500 font-medium mt-1">Métricas de satisfacción y crecimiento estudiantil</p>
             </div>
 
+            {/* KPI 1 y KPI 2 */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                  <CompletionChart />
                  <SatisfactionTable />
             </div>
+
+            {/* KPI 3: Tasa de Crecimiento de Reseñas */}
+            <div className="mt-12 lg:mt-16">
+                 <EngagementGrowthChart />
+            </div>
+
+            {/* Evolución Anual de Reseñas */}
             <div className="mt-12 lg:mt-16">
                  <GrowthChart />
             </div>
+
+            {/* Evolución Mensual de Reseñas Negativas */}
             <div className="mt-12 lg:mt-16">
                  <MonthlyNegativeChart />
             </div>
