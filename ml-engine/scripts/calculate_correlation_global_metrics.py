@@ -118,8 +118,8 @@ with open(output_filename, 'w', encoding='utf-8') as f:
     json.dump(output_data, f, indent=2)
 
 print(f"\nJSON guardado en: {output_filename}")
-print(f"Cada scatter plot tiene {sample_size} puntos (razonable para visualización)")
-print("\nCONCLUSIÓN: Las correlaciones son prácticamente cero (-0.033 y 0.005)")
+print(f"Cada scatter plot tiene {sample_size} puntos")
+print("\nCONCLUSIÓN: Las correlaciones son prácticamente cero:")
 print("No hay relación entre:")
 print("  - Precio y calidad del curso")
 print("  - Duración y número de inscritos")

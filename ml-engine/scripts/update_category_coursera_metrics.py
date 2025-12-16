@@ -39,18 +39,18 @@ def update_category_coursera_metrics():
                     COALESCE(SUM(number_reviews), 0) as total_reviews,
                     SUM(CASE WHEN LOWER(schedule) LIKE '%flexible%' THEN 1 ELSE 0 END) as total_flexible,
                     SUM(CASE WHEN LOWER(schedule) LIKE '%hands%' THEN 1 ELSE 0 END) as total_hands_on,
-                    SUM(CASE WHEN LOWER(level) = 'beginner' THEN 1 ELSE 0 END) as beginner_courses,
-                    SUM(CASE WHEN LOWER(level) = 'intermediate' THEN 1 ELSE 0 END) as intermediate_courses,
-                    SUM(CASE WHEN LOWER(level) = 'advanced' THEN 1 ELSE 0 END) as advanced_courses,
+                    SUM(CASE WHEN level = '1' THEN 1 ELSE 0 END) as beginner_courses,
+                    SUM(CASE WHEN level = '2' THEN 1 ELSE 0 END) as intermediate_courses,
+                    SUM(CASE WHEN level = '3' THEN 1 ELSE 0 END) as advanced_courses,
                     -- Calcular average_level como FLOAT decimal
                     ROUND(
                         (
-                            (SUM(CASE WHEN LOWER(level) = 'beginner' THEN 1.0 ELSE 0.0 END) * 1.0) +
-                            (SUM(CASE WHEN LOWER(level) = 'intermediate' THEN 1.0 ELSE 0.0 END) * 2.0) +
-                            (SUM(CASE WHEN LOWER(level) = 'advanced' THEN 1.0 ELSE 0.0 END) * 3.0)
+                            (SUM(CASE WHEN level = '1' THEN 1.0 ELSE 0.0 END) * 1.0) +
+                            (SUM(CASE WHEN level = '2' THEN 1.0 ELSE 0.0 END) * 2.0) +
+                            (SUM(CASE WHEN level = '3' THEN 1.0 ELSE 0.0 END) * 3.0)
                         ) / 
                         NULLIF(
-                            SUM(CASE WHEN LOWER(level) IN ('beginner', 'intermediate', 'advanced') THEN 1.0 ELSE 0.0 END),
+                            SUM(CASE WHEN level IN ('1', '2', '3') THEN 1.0 ELSE 0.0 END),
                             0
                         ),
                         2

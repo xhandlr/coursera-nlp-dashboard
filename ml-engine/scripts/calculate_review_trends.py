@@ -79,7 +79,48 @@ monthly_negative_evolution = negative_reviews.groupby(['year', 'month']).size().
 
 print(monthly_negative_evolution.head())
 
-# --- PASO 4: Estructurar y guardar en JSON ---
+# --- PASO 4: Calcular tasa de crecimiento de reseñas ---
+print("\nCalculando tasa de crecimiento de reseñas año a año...")
+
+# Ordenar por año para calcular el crecimiento
+yearly_reviews_sorted = yearly_summary.sort_index()
+
+# Calcular la tasa de crecimiento: ((Actual - Anterior) / Anterior) × 100
+review_growth = []
+years = list(yearly_reviews_sorted.index)
+
+for i in range(len(years)):
+    year = years[i]
+    current_reviews = yearly_reviews_sorted.loc[year, 'total_reviews']
+
+    if i == 0:
+        # Primer año no tiene crecimiento
+        growth_rate = None
+        previous_reviews = None
+    else:
+        previous_year = years[i - 1]
+        previous_reviews = yearly_reviews_sorted.loc[previous_year, 'total_reviews']
+
+        if previous_reviews > 0:
+            growth_rate = ((current_reviews - previous_reviews) / previous_reviews) * 100
+        else:
+            growth_rate = None
+
+    review_growth.append({
+        'year': int(year),
+        'total_reviews': int(current_reviews),
+        'previous_year_reviews': int(previous_reviews) if previous_reviews is not None else None,
+        'growth_rate': round(growth_rate, 2) if growth_rate is not None else None
+    })
+
+print("Tasa de crecimiento de reseñas:")
+for item in review_growth:
+    if item['growth_rate'] is not None:
+        print(f"Año {item['year']}: {item['growth_rate']}% ({item['total_reviews']} vs {item['previous_year_reviews']})")
+    else:
+        print(f"Año {item['year']}: Sin datos previos ({item['total_reviews']} reseñas)")
+
+# --- PASO 5: Estructurar y guardar en JSON ---
 output_data = {
     "metadata": {
         "title": "Análisis de Tendencias de Reseñas",
@@ -87,7 +128,8 @@ output_data = {
         "data_source": "Coursera Golden Database"
     },
     "yearly_summary": yearly_summary.reset_index().to_dict(orient='records'),
-    "monthly_negative_evolution": monthly_negative_evolution.to_dict(orient='records')
+    "monthly_negative_evolution": monthly_negative_evolution.to_dict(orient='records'),
+    "review_growth": review_growth
 }
 
 output_filename = os.path.join(OUTPUT_PATH, "review_trends.json")

@@ -28,10 +28,20 @@ def check_if_already_processed():
     Verifica si el script ya se ejecutó antes detectando:
     1. Si existen categorías numéricas corruptas
     2. Si las categorías en course son numéricas
+    3. Si la tabla category ya tiene datos procesados
     """
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor()
+        
+        # Verificar si la tabla category ya tiene datos válidos (nombres + descripciones)
+        cursor.execute("SELECT COUNT(*) FROM category WHERE category_name IS NOT NULL AND category_name != '' AND description IS NOT NULL")
+        valid_categories = cursor.fetchone()[0]
+        
+        if valid_categories > 0:
+            print(f"[DETECTADO] La tabla category ya tiene {valid_categories} categorías procesadas con descripciones")
+            conn.close()
+            return True, "already_populated"
         
         # Verificar si hay categorías corruptas (nombres numéricos)
         cursor.execute("SELECT COUNT(*) FROM category WHERE category_name REGEXP '^[0-9]+$'")
@@ -187,7 +197,12 @@ def map_and_update_categories():
     already_processed, status = check_if_already_processed()
     
     if already_processed:
-        if status == "corrupted":
+        if status == "already_populated":
+            print("[INFO] La tabla category ya tiene datos válidos procesados.")
+            print("[INFO] El script no ejecutará ningún cambio para preservar los datos existentes.")
+            return
+        
+        elif status == "corrupted":
             print("[ACCIÓN] Detectadas categorías corruptas. Limpiando...")
             if not clean_corrupted_categories():
                 print("[ERROR] No se pudieron limpiar las categorías corruptas")
